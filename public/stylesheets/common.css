@@ -7,3 +7,17 @@
 .carousel-inner>.item>a>img, .carousel-inner>.item>img {
   width: 100%;
 }
+
+.title1-img {
+  width: 32px;
+}
+
+.title1 {
+  font-size: 38px;
+  color: #161616;
+}
+.title2 {
+  font-size: 38px;
+  color: #999999;
+  margin-left: 50px;
+}

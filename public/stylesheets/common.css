@@ -1,3 +1,9 @@
 .header-container {
   background-color: cadetblue;
 }
+#myCarousel {
+  width: 100%;
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img {
+  width: 100%;
+}

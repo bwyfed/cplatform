@@ -1,5 +1,20 @@
 extends ../layout
 
 block content
+  #myCarousel.carousel.slide
+    ol.carousel-indicators
+      li.active(data-target="#myCarousel", data-slide-to="0")
+      li(data-target="#myCarousel", data-slide-to="1")
+      li(data-target="#myCarousel", data-slide-to="2")
+    .carousel-inner(role="listbox")
+      .item.active
+        img(src="/images/kl.jpg")
+        .carousel-caption 第一张宽连图
+      .item
+        img(src="/images/kl.jpg")
+        .carousel-caption 第二张宽连图
+      .item
+        img(src="/images/kl.jpg")
+        .carousel-caption 第三张宽连图
   h1= title
   p Welcome to #{title}

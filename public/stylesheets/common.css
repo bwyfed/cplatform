@@ -21,3 +21,29 @@
   color: #999999;
   margin-left: 50px;
 }
+
+.footer {
+  background-color: #26292E;
+  font-size: 18px;
+}
+.footer .row {
+  border-bottom: 18px;
+}
+.footer .row.footer-delimiter {
+  border-bottom: 1px dashed #4e5155;
+}
+.footer .img img {
+  width: 50px;
+}
+.footer-header {
+  color: #ffffff;
+}
+.footer-desc {
+  color: #a0a1aa;
+}
+
+.footer .copyright {
+  color: #4e5155;
+  padding: 18px 0;
+}
+

@@ -16,8 +16,36 @@ block content
       .item
         img(src="/images/kl.jpg")
         .carousel-caption 第三张宽连图
-  .container
-    include ../includes/index-section
+
+  mixin onesection(info,type)
+    .row
+      .col-md-1.title-item
+        img.title1-img(src="/images/title1.png")
+      .col-md-4.title1.title-item #{info.title1}
+      .col-md-7.title2.title-item #{info.title2}
+    if type
+      p haha
+    if block
+      block
+    .row.separator
+      img(src="/images/separator.png")
+
+  .container.index-sections
+    +onesection({
+        title1: '服务',
+        title2: 'Service'
+    })
+
+    +onesection({
+        title1: '行业及解决方案',
+        title2: 'Industry and Solutions'
+    })
+
+    +onesection({
+        title1: '合作客户',
+        title2: 'Cooperative customers'
+    })
+
   h1= title
   p Welcome to #{title}
 

@@ -20,3 +20,45 @@ block content
     include ../includes/index-section
   h1= title
   p Welcome to #{title}
+
+  mixin lesson
+    p immoc jade study
+  +lesson
+  mixin study(name, courses)
+    p #{name} study
+    ul.courses
+      each course in courses
+        li= course
+  +study('tom', ['jade', 'node'])
+
+  mixin group(student)
+    h4 #{student.name}
+    +study(student.name, student.courses)
+  +group({name: 'tom',courses:['jade', 'node', 'express']})
+
+  mixin team(slogon)
+    h4 #{slogon}
+    if block
+      block
+    else
+      p no team
+
+  +team('slogon')
+    p Good job!
+
+  mixin attr(name)
+    p(class!=attributes.class) #{name}
+
+  +attr('attrname')(class='magic')
+
+  mixin attrs(name)
+    p&attributes(attributes) #{name}
+
+  +attrs('attrsname')(class='magic2', id='attrsid')
+
+  mixin magic(name, ...items)
+    ul(class='#{name}')
+      each item in items
+        li= item
+
+  +magic('magic', 'node', 'jade', 'express', '..')

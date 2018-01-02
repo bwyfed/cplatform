@@ -1,22 +1,29 @@
-header
+header.header
     nav.navbar.navbar-default.navbar-fixed-top
         .container-fluid
             .navbar-header
-                a.navbar-brand(href="/") Brand #{title}
-            .collapse.navbar-collapse
+                button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#navbar-collapse-1" aria-expanded="false")
+                    span.sr-only Toggle navigation
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                a.navbar-brand(href="/")
+                    img(src="/images/company-logo.png", alt="Brand")
+                    span.company-name 宽&nbsp;连&nbsp;十&nbsp;方
+            #navbar-collapse-1.collapse.navbar-collapse
                 ul.nav.navbar-nav
                     li.active
                         a.dropdown-toggle(href="#") 首页
                     li
-                        a 服务
+                        a(href="#") 服务
                     li
-                        a 行业及解决方案
+                        a(href="#") 行业及解决方案
                     li
-                        a 合作客户
+                        a(href="#") 合作客户
                     li
-                        a 关于宽连
+                        a(href="#") 关于宽连
 
                 form.navbar-form.navbar-left
                     .form-group
-                        input(type="search" class="form-control" placeholder="Search")
-                    button(type="submit" class="btn btn-default") 搜索
+                        input(type="search" class="form-control" placeholder="搜索")
+                    button(type="submit" class="btn btn-default search") 搜索

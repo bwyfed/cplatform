@@ -1,6 +1,61 @@
 .header-container {
   background-color: cadetblue;
 }
+.header nav.navbar.navbar-default {
+  background-color: white;
+}
+
+.header .navbar-brand {
+  font-size: 0;
+  color: #161616;
+  height: auto;
+}
+.navbar-brand img {
+  display: inline-block;
+  width: 67px;
+}
+.navbar-brand .company-name {
+  font-size: 30px;
+  margin-left: 14px;
+  vertical-align: middle;
+}
+.header .navbar-nav {
+  padding-top: 15px;
+  font-size: 20px;
+}
+.header .navbar-nav li a {
+  color: #161616;
+}
+.header .navbar-nav li.active>a:hover {
+  background-color: white;
+  color: #161616;
+}
+.header .navbar-nav>li.active>a {
+  color: #161616;
+  background-color: white;
+}
+.header .navbar-nav>li {
+  position: relative;
+}
+.header .navbar-nav>li.active::after {
+  position: absolute;
+  bottom: -20px;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 3px;
+  background-color: #3ca5fc;
+  /*border-bottom: 3px solid #3ca5fc;*/
+}
+
+.header .navbar-form {
+  padding-top: 15px;
+}
+
+.header .navbar-form .search {
+  margin-left: 15px;
+}
+
 .main-container {
   margin-top: 50px;
 }

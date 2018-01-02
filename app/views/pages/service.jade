@@ -1,0 +1,17 @@
+extends ../layout
+
+block content
+    mixin bg()
+       .container-fluid
+           .row
+               .img
+                   img(src="/images/service/#{type}.png")
+    mixin detail()
+        .service-main
+            if block
+                block
+
+    +bg()
+
+    +detail()
+        p #{type} 详细内容

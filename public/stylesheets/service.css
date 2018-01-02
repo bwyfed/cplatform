@@ -1,0 +1,9 @@
+.main-container {
+    background-color: #f4f4f4;
+}
+.service-detail-container {
+    position: relative;
+    top: -20px;
+    background-color: wheat;
+    border-radius: 10px;
+}

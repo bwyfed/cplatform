@@ -1,5 +1,8 @@
 extends ../layout
 
+block cssconent
+    link(rel='stylesheet', href='/stylesheets/service.css')
+
 block content
     mixin bg()
        .container-fluid
@@ -7,11 +10,15 @@ block content
                .img
                    img(src="/images/service/#{type}.png")
     mixin detail()
-        .service-main
+        .container.service-detail-container
             if block
                 block
 
     +bg()
 
     +detail()
-        p #{type} 详细内容
+        .service-detail-box
+            p #{type} 详细内容
+            p #{type} 详细内容
+            p #{type} 详细内容
+            p #{type} 详细内容

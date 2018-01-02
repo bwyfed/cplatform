@@ -1,3 +1,6 @@
+body {
+  padding-top: 85px;
+}
 .header-container {
   background-color: cadetblue;
 }
@@ -57,10 +60,14 @@
 }
 
 .main-container {
-  margin-top: 50px;
+  /*margin-top: 50px;*/
 }
 #myCarousel {
   width: 100%;
+}
+
+#myCarousel .carousel-indicators {
+  display: none;
 }
 .carousel-inner>.item>a>img, .carousel-inner>.item>img {
   width: 100%;
@@ -92,6 +99,7 @@
 .footer {
   background-color: #26292E;
   font-size: 18px;
+  padding-top: 50px;
 }
 .footer .row {
   border-bottom: 18px;
@@ -100,13 +108,24 @@
   border-bottom: 1px dashed #4e5155;
 }
 .footer .img img {
-  width: 50px;
+  width: 100px;
 }
 .footer-header {
   color: #ffffff;
 }
 .footer-desc {
   color: #a0a1aa;
+}
+
+.footer .list-group-item {
+  background-color: inherit;
+  border: none;
+  padding: 0;
+}
+
+.footer .list-group-item:hover {
+  color: inherit;
+  background-color: inherit;
 }
 
 .footer .copyright {

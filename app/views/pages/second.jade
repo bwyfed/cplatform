@@ -1,14 +1,14 @@
 extends ../layout
 
 block cssconent
-    link(rel='stylesheet', href='/stylesheets/service.css')
+    link(rel='stylesheet', href='/stylesheets/second.css')
 
 block content
     mixin bg()
        .container-fluid
            .row
                .img
-                   img(src="/images/service/#{type}.png")
+                   img(src="/images/second/#{type}.png")
     mixin detail()
         .container.service-detail-container
             if block

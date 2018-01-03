@@ -73,7 +73,7 @@
     {
       "title":"和我信",
       "imgUrl": "/images/second/service/industry1.png",
-      "desc":"江西本地的'支付宝'"
+      "desc": ["江西本地的'支付宝'"]
     },
     {
       "title":"短信聚合分发",

@@ -74,6 +74,19 @@ block content
         +telecom(data.telecom_list)
 
     mixin telecom(list)
+        .row
+            .telecom-title-1 运营商解决方案
         each item,index in list
-            p #{item.title}
+            if index % 3 == 0
+                <div class="row telecom-row">
+            .col-md-4
+                .telecom-img
+                    img.center-block(src="#{item.imgUrl}")
+                .center-block
+                    h4.telecom-title.text-center #{item.title}
+                    .telecom-desc-box
+                        each desc in item.desc
+                            .telecom-desc-item.text-center #{desc}
+            if index % 3 == 2
+                </div>
 

@@ -69,3 +69,23 @@
 .service-detail-container .service-detail-box .product-row .col-md-6 .product-img img{
     width: 400px;
 }
+
+.service-detail-container .service-detail-box .telecom-row {
+    margin-bottom: 30px;
+}
+
+.service-detail-container .service-detail-box .telecom-row .telecom-img img {
+    width: 105px;
+}
+
+.service-detail-container .service-detail-box .telecom-row .telecom-title {
+    color: #161616;
+    font-size: 20px;
+}
+
+.service-detail-container .service-detail-box .telecom-title-1 {
+    color: #161616;
+    font-size: 30px;
+    margin-bottom: 50px;
+    padding-left: 50px;
+}

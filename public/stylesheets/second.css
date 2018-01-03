@@ -63,4 +63,9 @@
 .service-detail-container .service-detail-box .product-row .col-md-6 .product-desc-box {
     border: 1px solid #999999;
     width: 400px;
+    height: 180px;
+}
+
+.service-detail-container .service-detail-box .product-row .col-md-6 .product-img img{
+    width: 400px;
 }

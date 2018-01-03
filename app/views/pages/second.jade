@@ -19,18 +19,22 @@ block content
         +bg(subtype)
     else if type == 'industry'
         +bg(type)
+    else if type == 'industry_telecom'
+        +bg(type)
 
     if type=='service'
         +detail()
             if subtype=='solution'
                 +solution(data)
             if subtype=='product'
-                +product(data)
+                +product(data.list)
 
     else if type == 'industry'
         +detail()
-            p industry
-
+            +industry(data)
+    else if type == 'industry_telecom'
+        +detail()
+            +industry2(data)
 
     mixin solution(data)
         .desc-box
@@ -47,15 +51,29 @@ block content
                         each item2 in item.answer
                             li.answers-item -&nbsp;#{item2}
 
-    mixin product(data)
-        each item,index in data.list
+    mixin product(list)
+        each item,index in list
             if index%2==0
                 <div class="row product-row">
             .col-md-6
-                .product-img
-                    img.center-block(src="#{item.imgUrl}")
+                if item.moreUrl
+                    a(href="#{item.moreUrl}").product-img
+                        img.center-block(src="#{item.imgUrl}")
+                else
+                    .product-img
+                        img.center-block(src="#{item.imgUrl}")
                 .product-desc-box.center-block
                     h4.product-title #{item.title}
                     .product-desc #{item.desc}
             if index%2==1
                 </div>
+
+    mixin industry(data)
+        +product(data.industry_list)
+    mixin industry2(data)
+        +telecom(data.telecom_list)
+
+    mixin telecom(list)
+        each item,index in list
+            p #{item.title}
+

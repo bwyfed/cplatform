@@ -11,8 +11,9 @@ block content
                    img(src="/images/second/#{imgUrl}.png")
     mixin detail()
         .container.service-detail-container
-            if block
-                block
+            .container-fluid.service-detail-box
+                if block
+                    block
 
     if type=='service'
         +bg(subtype)
@@ -21,14 +22,14 @@ block content
 
     if type=='service'
         +detail()
-            .service-detail-box
-                if subtype=='solution'
-                    +solution(data)
+            if subtype=='solution'
+                +solution(data)
+            if subtype=='product'
+                +product(data)
 
     else if type == 'industry'
         +detail()
-            .service-detail-box
-                p industry
+            p industry
 
 
     mixin solution(data)
@@ -45,3 +46,16 @@ block content
                     ul.answers
                         each item2 in item.answer
                             li.answers-item -&nbsp;#{item2}
+
+    mixin product(data)
+        each item,index in data.list
+            if index%2==0
+                <div class="row product-row">
+            .col-md-6
+                .product-img
+                    img.center-block(src="#{item.imgUrl}")
+                .product-desc-box.center-block
+                    h4.product-title #{item.title}
+                    .product-desc #{item.desc}
+            if index%2==1
+                </div>

@@ -28,6 +28,8 @@
 
 .service-detail-container .service-detail-box .row .question {
     font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .service-detail-container .service-detail-box .row .answers {
@@ -41,4 +43,24 @@
 }
 .service-detail-container .service-detail-box .row .answers .answers-item {
     font-size: 16px;
+}
+
+.service-detail-container .service-detail-box .row .product-title {
+    color: #161616;
+    font-size: 20px;
+    padding-left: 28px;
+}
+.service-detail-container .service-detail-box .row .product-desc {
+    color: #161616;
+    font-size: 16px;
+    padding-left: 28px;
+}
+
+.service-detail-container .service-detail-box .product-row {
+    margin-bottom: 50px;
+}
+
+.service-detail-container .service-detail-box .product-row .col-md-6 .product-desc-box {
+    border: 1px solid #999999;
+    width: 400px;
 }

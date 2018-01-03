@@ -21,6 +21,8 @@ block content
         +bg(type)
     else if type == 'industry_telecom'
         +bg(type)
+    else if type == 'customers'
+        +bg(type)
 
     if type=='service'
         +detail()
@@ -35,6 +37,10 @@ block content
     else if type == 'industry_telecom'
         +detail()
             +industry2(data)
+    else if type == 'customers'
+        +detail()
+            +customers(data)
+
 
     mixin solution(data)
         .desc-box
@@ -87,6 +93,16 @@ block content
                     .telecom-desc-box
                         each desc in item.desc
                             .telecom-desc-item.text-center #{desc}
+            if index % 3 == 2
+                </div>
+
+    mixin customers(data)
+        each item in data.imglist
+            if index % 3 == 0
+                <div class="row customers-row">
+            .col-md-4
+                .customers-img
+                    img.center-block(src="#{item.src}")
             if index % 3 == 2
                 </div>
 

@@ -6,6 +6,7 @@ var router = express.Router();
 
 var data_service = require('../app/mock/service.json');
 var data_industry = require('../app/mock/industry.json');
+var data_customers = require('../app/mock/customers.json');
 
 router.get('/industry/telecom', function(req, res) {
     console.log(111);
@@ -22,5 +23,8 @@ router.get('/service/:subtype1',function(req, res){
     res.render('second', { title: '服务类型',type: 'service',subtype:subtype1, data: data_service[subtype1] });
 });
 
+router.get('/customers',function(req, res) {
+    res.render('second', { title: '合作客户', type: 'customers', data: data_customers});
+});
 
 module.exports = router;

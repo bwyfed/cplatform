@@ -4,21 +4,44 @@ block cssconent
     link(rel='stylesheet', href='/stylesheets/second.css')
 
 block content
-    mixin bg()
+    mixin bg(imgUrl)
        .container-fluid
            .row
                .img
-                   img(src="/images/second/#{type}.png")
+                   img(src="/images/second/#{imgUrl}.png")
     mixin detail()
         .container.service-detail-container
             if block
                 block
 
-    +bg()
+    if type=='service'
+        +bg(subtype)
+    else if type == 'industry'
+        +bg(type)
 
-    +detail()
-        .service-detail-box
-            p #{type} 详细内容
-            p #{type} 详细内容
-            p #{type} 详细内容
-            p #{type} 详细内容
+    if type=='service'
+        +detail()
+            .service-detail-box
+                if subtype=='solution'
+                    +solution(data)
+
+    else if type == 'industry'
+        +detail()
+            .service-detail-box
+                p industry
+
+
+    mixin solution(data)
+        .desc-box
+            each item in data.desc
+                p.text-center.desc #{item}
+        .container-fluid.qa-box
+        each item in data.qa
+            .row
+                .col-md-6
+                    img.center-block.img(src="#{item.imgUrl}")
+                .col-md-6
+                    p.question(class="#{item.class}") #{item.question}
+                    ul.answers
+                        each item2 in item.answer
+                            li.answers-item -&nbsp;#{item2}

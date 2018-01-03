@@ -1,3 +1,14 @@
+.black-color {
+  color: #161616;
+}
+.orange-color {
+  color: #f08c40;
+}
+.blue-color {
+  color: #1da6ff;
+}
+
+
 body {
   padding-top: 85px;
 }

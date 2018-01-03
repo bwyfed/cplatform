@@ -6,4 +6,39 @@
     top: -20px;
     background-color: wheat;
     border-radius: 10px;
+    padding: 45px;
+}
+
+.service-detail-container .service-detail-box {
+
+}
+
+.service-detail-container .service-detail-box .desc-box {
+    margin-bottom: 49px;
+}
+
+.service-detail-container .service-detail-box .desc {
+    color: #161616;
+    font-size: 20px;
+}
+
+.service-detail-container .service-detail-box .img {
+
+}
+
+.service-detail-container .service-detail-box .row .question {
+    font-size: 20px;
+}
+
+.service-detail-container .service-detail-box .row .answers {
+    list-style: none;
+    margin: 0;
+    padding:0;
+    color: #161616;
+    /*-webkit-margin-before: 0;*/
+    /*-webkit-margin-after: 0;*/
+    /*-webkit-padding-start: 40px;*/
+}
+.service-detail-container .service-detail-box .row .answers .answers-item {
+    font-size: 16px;
 }

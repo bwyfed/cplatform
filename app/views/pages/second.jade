@@ -23,6 +23,8 @@ block content
         +bg(type)
     else if type == 'customers'
         +bg(type)
+    else if type == 'about'
+        +bg(type)
 
     if type=='service'
         +detail()
@@ -30,7 +32,6 @@ block content
                 +solution(data)
             if subtype=='product'
                 +product(data.list)
-
     else if type == 'industry'
         +detail()
             +industry(data)
@@ -40,6 +41,9 @@ block content
     else if type == 'customers'
         +detail()
             +customers(data)
+    else if type == 'about'
+        include style
+        include ./about.html
 
 
     mixin solution(data)

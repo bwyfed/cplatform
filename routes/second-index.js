@@ -27,4 +27,8 @@ router.get('/customers',function(req, res) {
     res.render('second', { title: '合作客户', type: 'customers', data: data_customers});
 });
 
+router.get('/about', function(req, res) {
+    res.render('second', {title: '关于宽连', type: 'about'})
+});
+
 module.exports = router;

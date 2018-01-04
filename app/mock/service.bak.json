@@ -1,41 +1,35 @@
 {
   "solution": {
     "desc": [
+      "9大行业，10年积累",
       "紧跟前沿技术，动态掌握行业发展态势",
-      "为客户提供最贴合自身发展的IT解决方案，助力传统行业的IT升级和互联网改造。"
+      "为客户提供最贴合自身发展的IT解决方案"
     ],
-    "steplist": [
+    "qa":[
       {
-        "title": "需求分析阶段",
-        "titleImgUrl": "/images/second/service/solution/1.png",
-        "imgUrl1": "/images/second/service/solution/1-1.png",
-        "sublist": [
-          "需求调研",
-          "分阶段确认需求",
+        "imgUrl": "/images/second/service/solution1.png",
+        "question": "我们能做什么？",
+        "answer": [
+          "行业理解及可行性研究报告",
           "市场及竞品分析",
-          "行业理解及可行性研究报告"
-        ]
-      },
-      {
-        "title": "解决方案生成阶段",
-        "titleImgUrl": "/images/second/service/solution/2.png",
-        "imgUrl1": "/images/second/service/solution/2-1.png",
-        "sublist": [
-          "定制IT解决方案",
+          "定制化IT解决方案",
           "产品功能交互原型",
-          "设计应用情景",
-          "整合解决方案"
-        ]
+          "产品高保真效果图",
+          "需求功能详细设计"
+        ],
+        "class":"orange-color"
       },
       {
-        "title": "为客户解决哪些问题",
-        "titleImgUrl": "/images/second/service/solution/3.png",
-        "imgUrl1": "/images/second/service/solution/3-1.png",
-        "sublist": [
+        "imgUrl": "/images/second/service/solution2.png",
+        "question": "我们能为客户解决什么？",
+        "answer": [
           "抓住市场机遇，拥抱新商机",
-          "提高工作效率，降低管理风险",
-          "创新客户体验，重塑生产力"
-        ]
+          "提高工作效率",
+          "降低管理风险",
+          "创新客户体验",
+          "重塑生产力和流程"
+        ],
+        "class": "blue-color"
       }
     ]
   },

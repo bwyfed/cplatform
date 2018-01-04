@@ -13,8 +13,47 @@
 
 }
 
-.service-detail-container .service-detail-box .desc-box {
+.service-detail-container .service-detail-box .solution-desc-box {
     margin-bottom: 49px;
+}
+.service-detail-container .service-detail-box .solution-qa-box .solution-row {
+    margin-bottom: 40px;
+}
+
+.service-detail-container .service-detail-box .solution-qa-box .solution-title-box {
+    position: relative;
+}
+
+.service-detail-container .service-detail-box .solution-qa-box .solution-title-box .solution-title {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    line-height: 64px;
+    top: 0;
+    font-size: 20px;
+    color: white;
+}
+
+.service-detail-container .service-detail-box .solution-qa-box .solution-img-1 {
+    float: right;
+}
+
+.service-detail-container .service-detail-box .row .solution-answers {
+    list-style: none;
+    margin: 0;
+    padding:0;
+    color: #161616;
+    height: 202px;
+    padding-left: 80px;
+    padding-top: 20px;
+    /*-webkit-margin-before: 0;*/
+    /*-webkit-margin-after: 0;*/
+    /*-webkit-padding-start: 40px;*/
+}
+
+.service-detail-container .service-detail-box .row .solution-answers .answers-item {
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 
 .service-detail-container .service-detail-box .desc {
@@ -32,18 +71,6 @@
     margin-bottom: 40px;
 }
 
-.service-detail-container .service-detail-box .row .answers {
-    list-style: none;
-    margin: 0;
-    padding:0;
-    color: #161616;
-    /*-webkit-margin-before: 0;*/
-    /*-webkit-margin-after: 0;*/
-    /*-webkit-padding-start: 40px;*/
-}
-.service-detail-container .service-detail-box .row .answers .answers-item {
-    font-size: 16px;
-}
 
 .service-detail-container .service-detail-box .row .product-title {
     color: #161616;

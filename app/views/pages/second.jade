@@ -79,7 +79,16 @@ block content
                 </div>
 
     mixin industry(data)
-        +product(data.industry_list)
+        each item,index in data.industry_list
+            if index % 2 == 0
+                <div class="row industry-row">
+            .col-md-6.industry-item
+                .product-img
+                    img.center-block(src="#{item.imgUrl}")
+                .industry-title
+                    .text #{item.title}
+            if index % 2 == 1
+                </div>
     mixin industry2(data)
         +telecom(data.telecom_list)
 

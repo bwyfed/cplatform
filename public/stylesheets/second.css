@@ -3,8 +3,8 @@
 }
 .service-detail-container {
     position: relative;
-    top: -20px;
-    background-color: wheat;
+    top: -40px;
+    background-color: white;
     border-radius: 10px;
     padding: 45px;
 }
@@ -68,6 +68,34 @@
 
 .service-detail-container .service-detail-box .product-row .col-md-6 .product-img img{
     width: 400px;
+}
+/*行业及解决方案*/
+.service-detail-container .service-detail-box .industry-row {
+    margin-bottom: 30px;
+}
+.service-detail-container .service-detail-box .industry-row .industry-item {
+    position: relative;
+}
+.service-detail-container .service-detail-box .industry-row .industry-item .industry-title {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    color: white;
+    font-size: 20px;
+}
+.service-detail-container .service-detail-box .industry-row .industry-item .industry-title::before {
+    content: " ";
+    display: inline-block;
+    height: 100%;
+    width: 1%;
+    vertical-align: middle;
+}
+.service-detail-container .service-detail-box .industry-row .industry-item .industry-title .text {
+    width: 98%;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .service-detail-container .service-detail-box .telecom-row {

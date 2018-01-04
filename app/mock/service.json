@@ -44,22 +44,22 @@
       {
         "title":"熟悉主流用户界面",
         "desc": "微信开发（公众号、企业号、小程序）、H5、钉钉扩展、APP、WWW网站，WEB后台",
-        "imgUrl": "/images/second/service/product1.png"
+        "imgUrl": "/images/second/service/product/1.jpg"
       },
       {
         "title":"掌握前沿核心科技",
         "desc": "大数据分析、AI连接、物联网连接、VR/AR连接、移动支付",
-        "imgUrl": "/images/second/service/product2.png"
+        "imgUrl": "/images/second/service/product/2.jpg"
       },
       {
         "title":"沉淀安全可靠架构",
         "desc": "大数据处理、高并发、分布式处理、电信级安全设计",
-        "imgUrl": "/images/second/service/product3.png"
+        "imgUrl": "/images/second/service/product/3.jpg"
       },
       {
         "title":"推进先进管理模式",
         "desc": "微服务 + DevOps开发模式、扁平化团队管理",
-        "imgUrl": "/images/second/service/product4.png"
+        "imgUrl": "/images/second/service/product/4.jpg"
       }
     ]
   },

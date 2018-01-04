@@ -82,7 +82,7 @@
     height: 100%;
     top: 0;
     color: white;
-    font-size: 20px;
+    font-size: 30px;
 }
 .service-detail-container .service-detail-box .industry-row .industry-item .industry-title::before {
     content: " ";

@@ -12,25 +12,25 @@ header.header
                     span.company-name 宽&nbsp;连&nbsp;十&nbsp;方
             #navbar-collapse-1.collapse.navbar-collapse
                 ul.nav.navbar-nav
-                    li.active
+                    li.nav-item.nav-item-index(data-active=".nav-item-index")
                         a.dropdown-toggle(href="/") 首页
-                    li.dropdown
+                    li.nav-item-service-ctn.dropdown
                         a.dropdown-toggle(href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false") 服务
                         ul.dropdown-menu
-                            li
-                                a.text-center(href="/second/service/solution") 解决方案
+                            li.nav-item(data-active=".nav-item-service-ctn")
+                                a.text-center.service-link(href="/second/service/solution") 解决方案
                             li.divider(role="separator")
-                            li
-                                a.text-center(href="/second/service/product") 产品技术
+                            li.nav-item(data-active=".nav-item-service-ctn")
+                                a.text-center.service-link(href="/second/service/product") 产品技术
                             li.divider(role="separator")
-                            li
-                                a.text-center(href="/second/service/operate") 运营服务
+                            li.nav-item(data-active=".nav-item-service-ctn")
+                                a.text-center.service-link(href="/second/service/operate") 运营服务
                             li.divider(role="separator")
-                    li
+                    li.nav-item.nav-item-industry(data-active=".nav-item-industry")
                         a(href="/second/industry") 行业及解决方案
-                    li
+                    li.nav-item.nav-item-customers(data-active=".nav-item-customers")
                         a(href="/second/customers") 合作客户
-                    li
+                    li.nav-item.nav-item-about(data-active=".nav-item-about")
                         a(href="/second/about") 关于宽连
 
                 form.navbar-form.navbar-left

@@ -61,8 +61,12 @@
     font-size: 20px;
 }
 
-.service-detail-container .service-detail-box .img {
+.service-detail-container .service-detail-box .operate-row {
+    margin-bottom: 60px;
+}
 
+.service-detail-container .service-detail-box .operate-row:last-child {
+    margin-bottom: 0;
 }
 
 .service-detail-container .service-detail-box .row .question {

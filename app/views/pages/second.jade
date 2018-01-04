@@ -32,6 +32,8 @@ block content
                 +solution(data)
             if subtype=='product'
                 +product(data.list)
+            if subtype=='operate'
+                +operate(data)
     else if type == 'industry'
         +detail()
             +industry(data)
@@ -81,6 +83,12 @@ block content
             if index%2==1
                 </div>
 
+
+    mixin operate(data)
+        each item in data.list
+            .row.operate-row
+                .operate-img-box
+                    img.operate-img.center-block(src="#{item.imgUrl}")
     mixin industry(data)
         each item,index in data.industry_list
             if index % 2 == 0

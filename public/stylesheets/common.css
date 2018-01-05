@@ -13,6 +13,9 @@ body {
   padding-top: 85px;
   font-family: "Microsoft YaHei","SimSun",helvetica,arial;
 }
+/*img {*/
+  /*transform: scale(0.78);*/
+/*}*/
 @media (max-width: 1170px) {
   body {
     padding-top: 131px;
@@ -30,12 +33,17 @@ body {
   color: #161616;
   height: auto;
 }
+.header .navbar-header .navbar-brand {
+  margin-left: 56px;
+}
+
 .navbar-brand img {
   display: inline-block;
   width: 67px;
 }
 .navbar-brand .company-name {
-  font-size: 30px;
+  font-size: 28px;
+  font-weight: bold;
   margin-left: 14px;
   vertical-align: middle;
 }
@@ -46,6 +54,10 @@ body {
 .header .navbar-nav>.nav-item {
   margin-left: 30px;
 }
+.header .navbar-nav a {
+  font-size: 16px;
+  font-weight: bold;
+}
 .header .navbar-nav>.nav-item-service-ctn {
   margin-left: 30px;
 }
@@ -55,6 +67,7 @@ body {
 .header .navbar-nav li.active>a:hover {
   background-color: white;
   color: #161616;
+  margin-top: 3px;
 }
 .header .navbar-nav>li.active>a {
   color: #161616;
@@ -65,7 +78,7 @@ body {
 }
 .header .navbar-nav>li.active::after {
   position: absolute;
-  bottom: -20px;
+  bottom: -17px;
   display: block;
   content: '';
   width: 100%;
@@ -118,6 +131,7 @@ body {
 }
 .index-sections .title-row {
   margin-bottom: 50px;
+  padding-left: 60px;
 }
 .index-sections .one-section .thumbnail {
   margin: 0;
@@ -143,20 +157,20 @@ body {
 }
 
 .index-sections .one-section .title-item.title1 {
-  font-size: 36px;
+  font-size: 30px;
   color: #161616;
   margin-left: 30px;
 }
 
 .index-sections .one-section .title-item.title2 {
-  font-size: 36px;
+  font-size: 30px;
   color: #999999;
   margin-left: 40px;
 }
 
 .index-sections .cate-name {
-  margin-top: 40px;
-  font-size: 30px;
+  margin-top: 20px;
+  font-size: 22px;
   color: #161616;
 }
 

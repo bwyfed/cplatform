@@ -3,53 +3,48 @@
     {
       "moreUrl": "/second/industry/telecom",
       "title": "电信",
-      "imgUrl": "/images/second/service/industry1.png",
+      "imgUrl": "/images/second/industry/1_telecom.jpg",
       "desc": "运营商解决方案：手机冲浪-中国移动基地产品、12580 和生活-中国移动电商基地、和我信-江西本地的'支付宝'、短信聚合分发-创新型短信聚合分发开放平台、需求管理平台-生产需求流程全生命周期管理、精准流量-基于大数据的精准流量经营服务。"
     },
     {
-      "title": "电商",
-      "imgUrl": "/images/second/service/industry1.png",
-      "desc":"为行业客户和品牌商提供电商解决方案、平台建设、运营服务以及商品销售等服务，包括B2B、B2B2C以及O2O三种业务形态。"
+      "title": "教育",
+      "imgUrl": "/images/second/industry/2_edu.jpg",
+      "desc":"互联网+教育模式，打破了时空限制，让知识获取更加自由！学员们可充分利用碎片化时间进行交流学习。灵活的交付，满足不同的教学场景、成熟的运营服务体系、定制化开发、支付全通道、多平台覆盖。"
     },
     {
-      "title": "家电",
-      "imgUrl": "/images/second/service/industry1.png",
-      "desc":"穿越消费者全流程的数字化转型解决方案.家电后服务：搭建O2O平台，实现家电购买、安装、维修、延保、回收、再购买的生命周期闭环。"
+      "title": "农业",
+      "imgUrl": "/images/second/industry/3_agriculture.jpg",
+      "desc":"基于手机这一载体，通过微信、语音（专家热线）、互联网站等方式，构建农业信息交互平台，以满足'三农'对农技、农价、劳务、气象和农村政务管理等民生问题的信息化需求。涵盖农业天气、农业政策、农业科技、农产品价格、生活百科等内容。"
+    },
+    {
+      "title": "物流",
+      "imgUrl": "/images/second/industry/4_logistics.jpg",
+      "desc":"宽连TMS是物流运输行业的SAAS平台，为物流企业提供全流程的解决方案。基于多运输方式及多基地物流运输网络设计，适应集港运输、特种运输、危品运输、零担运输、干线运输、市内配送等多种业务模式，实现运力资源的合理配置、动态跟踪和作业任务的全程监控。"
     },
     {
       "title": "旅游",
-      "imgUrl": "/images/second/service/industry1.png",
+      "imgUrl": "/images/second/industry/5_tourism.jpg",
       "desc":"基于微信的入口优势，打造游客行前、行中、行后全生命周期产品。帮助旅游管理部门实现信息化管理及服务。以提升游客体验为目标，实现旅游信息化。构建一站式信息服务平台，实现整合营销、整合服务。满足移动、高效、及时的旅游管理需求。"
     },
     {
       "title": "媒体",
-      "imgUrl": "/images/second/service/industry1.png",
+      "imgUrl": "/images/second/industry/6_media.jpg",
       "desc":"互联网新闻信息服务对新闻采编、发布、转载提出更高要求，传统媒体的数字化转型更加需要依靠成熟的技术与专业的运营。"
     },
     {
-      "title": "教育",
-      "imgUrl": "/images/second/service/industry1.png",
-      "desc":"互联网+教育模式，打破了时空限制，让知识获取更加自由！学员们可充分利用碎片化时间进行交流学习。灵活的交付，满足不同的教学场景、成熟的运营服务体系、定制化开发、支付全通道、多平台覆盖。"
-    },
-    {
-      "title": "物流",
-      "imgUrl": "/images/second/service/industry1.png",
-      "desc":"宽连TMS是物流运输行业的SAAS平台，为物流企业提供全流程的解决方案。基于多运输方式及多基地物流运输网络设计，适应集港运输、特种运输、危品运输、零担运输、干线运输、市内配送等多种业务模式，实现运力资源的合理配置、动态跟踪和作业任务的全程监控。"
-    },
-    {
-      "title": "电力",
-      "imgUrl": "/images/second/service/industry1.png",
-      "desc":"“大云物移”与生产、经营和管理深度融合，实现数据资源充分共享，信息服务方便快捷，提高服务品质，推动电力行业的数字化转型升级。"
+      "title": "家电",
+      "imgUrl": "/images/second/industry/7_household_elec.jpg",
+      "desc":"穿越消费者全流程的数字化转型解决方案.家电后服务：搭建O2O平台，实现家电购买、安装、维修、延保、回收、再购买的生命周期闭环。"
     },
     {
       "title": "政务",
-      "imgUrl": "/images/second/service/industry1.png",
+      "imgUrl": "/images/second/industry/8_government.jpg",
       "desc":"面向全国县域级的一站式政务服务移动应用云平台。"
     },
     {
-      "title": "农业",
-      "imgUrl": "/images/second/service/industry1.png",
-      "desc":"基于手机这一载体，通过微信、语音（专家热线）、互联网站等方式，构建农业信息交互平台，以满足'三农'对农技、农价、劳务、气象和农村政务管理等民生问题的信息化需求。涵盖农业天气、农业政策、农业科技、农产品价格、生活百科等内容。"
+      "title": "电力",
+      "imgUrl": "/images/second/industry/9_power.jpg",
+      "desc":"“大云物移”与生产、经营和管理深度融合，实现数据资源充分共享，信息服务方便快捷，提高服务品质，推动电力行业的数字化转型升级。"
     }
   ],
   "telecom_list": [

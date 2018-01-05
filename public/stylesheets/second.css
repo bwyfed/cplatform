@@ -126,15 +126,19 @@
 .service-detail-container .service-detail-box .product-row {
     margin-bottom: 50px;
 }
-
+/*服务-产品技术*/
 .service-detail-container .service-detail-box .product-row .col-md-6 .product-desc-box {
     border: 1px solid #999999;
-    width: 400px;
-    height: 136px;
+    width: 80%;
+    height: 120px;
+}
+
+.service-detail-container .service-detail-box .product-row .col-md-6 .product-img {
+    width: 80%;
 }
 
 .service-detail-container .service-detail-box .product-row .col-md-6 .product-img img{
-    width: 400px;
+    /*width: 400px;*/
 }
 /*行业及解决方案*/
 .service-detail-container .service-detail-box .industry-row {

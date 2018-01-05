@@ -71,14 +71,14 @@ block content
     mixin product(list)
         each item,index in list
             if index%2==0
-                <div class="row product-row">
-            .col-md-6
+                <div class="row second-normal-row product-row">
+            .col-md-6.second-normal-item
                 if item.moreUrl
-                    a(href="#{item.moreUrl}").product-img
-                        img.center-block(src="#{item.imgUrl}")
+                    a(href="#{item.moreUrl}").second-normal-img-box.product-img
+                        img.second-normal-img(src="#{item.imgUrl}")
                 else
-                    .product-img
-                        img.center-block(src="#{item.imgUrl}")
+                    .center-block.second-normal-img-box.product-img
+                        img.second-normal-img(src="#{item.imgUrl}")
                 .product-desc-box.center-block
                     h4.product-title #{item.title}
                     .product-desc #{item.desc}

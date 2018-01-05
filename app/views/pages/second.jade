@@ -121,12 +121,12 @@ block content
                 </div>
 
     mixin customers(data)
-        each item in data.imglist
+        each item,index in data.imglist
             if index % 3 == 0
-                <div class="row customers-row">
-            .col-md-4
-                .customers-img
-                    img.center-block(src="#{item.src}")
+                <div class="row second-normal-row customers-row">
+            .second-normal-item.col-md-4
+                .second-normal-img-box.customers-img-box
+                    img.second-normal-img(src="#{item.src}")
             if index % 3 == 2
                 </div>
 

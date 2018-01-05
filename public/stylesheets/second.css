@@ -181,3 +181,12 @@
     margin-bottom: 50px;
     padding-left: 50px;
 }
+/*二级页面中通用的图片样式*/
+.service-detail-container .service-detail-box .second-normal-row {
+    margin-bottom: 40px;
+}
+
+.second-normal-row .second-normal-item .second-normal-img-box .second-normal-img {
+    display: block;
+    width: 100%;
+}

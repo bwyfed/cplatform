@@ -54,14 +54,16 @@ block content
                 p.text-center.desc #{item}
         .container-fluid.solution-qa-box
             each item in data.steplist
-                .row.solution-row
-                    .solution-title-box
-                        img.solution-title-img.center-block(src="#{item.titleImgUrl}")
-                        .solution-title #{item.title}
-                .row.solution-row
-                    .col-md-6
-                        img.solution-img-1.img(src="#{item.imgUrl1}")
-                    .col-md-6
+                .row.second-normal-row.solution-row
+                    .center-block.second-normal-item.second-solution-item
+                        .second-normal-img-box.solution-title-box
+                            img.second-normal-img.solution-title-img.center-block(src="#{item.titleImgUrl}")
+                            .solution-title #{item.title}
+                .row.second-normal-row.solution-row
+                    .second-normal-item.col-md-7
+                        .second-normal-img-box.center-block
+                            img.solution-img-1.second-normal-img(src="#{item.imgUrl1}")
+                    .col-md-5
                         ul.solution-answers
                             each item2 in item.sublist
                                 li.answers-item -&nbsp;#{item2}

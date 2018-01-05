@@ -5,13 +5,13 @@ block cssconent
 
 block content
     mixin bg(imgUrl)
-       .container-fluid
+       .container-fluid.bg-container
            .row
-               .img
+               .bg-img
                    img(src="/images/second/#{imgUrl}.png")
     mixin detail()
         .container.service-detail-container
-            .container-fluid.service-detail-box
+            .container.service-detail-box
                 if block
                     block
 

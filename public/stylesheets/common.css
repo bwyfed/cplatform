@@ -131,16 +131,70 @@ body {
 }
 .index-sections .title-row {
   margin-bottom: 50px;
-  padding-left: 60px;
 }
+.index-sections .one-section .index-service-row {
+
+}
+.index-sections .one-section .index-service-row .index-service-link {
+  display: block;
+  width: 100%;
+}
+
+.index-sections .one-section .index-service-row .index-service-link .index-service-img{
+  width: 100%;
+}
+
+.index-sections .one-section .index-industry-row {
+
+}
+.index-sections .one-section .index-industry-row .index-industry-link {
+  display: block;
+  width: 100%;
+}
+
+.index-sections .one-section .index-industry-row .index-industry-link .index-industry-img{
+  width: 100%;
+}
+
+.index-sections .one-section .index-customers-row {
+
+}
+.index-sections .one-section .index-customers-row .index-customers-link {
+  display: block;
+  width: 100%;
+}
+
+.index-sections .one-section .index-customers-row .index-customers-link .index-customers-img{
+  width: 100%;
+}
+
+@media (max-width: 1440px) and (min-width: 992px) {
+  .index-sections .one-section .index-service-row .index-service-link .index-service-img{
+    width: 80%;
+  }
+  .index-sections .one-section .index-industry-row .index-industry-link .index-industry-img{
+    width: 80%;
+  }
+  .index-sections .one-section .index-customers-row .index-customers-link .index-customers-img{
+    width: 80%;
+  }
+  .index-sections .title-row {
+    padding-left: 60px;
+  }
+}
+
 .index-sections .one-section .thumbnail {
   margin: 0;
   padding: 0;
 }
-.index-sections .one-section .separator {
+.index-sections .one-section .separator-row {
+  width: 100%;
   margin-top: 50px;
   height: 25px;
   overflow: hidden;
+}
+.index-sections .one-section .separator-row img {
+
 }
 .index-sections .title1-img {
   width: 35px;

@@ -78,11 +78,11 @@ body {
 }
 .header .navbar-nav>li.active::after {
   position: absolute;
-  bottom: -17px;
+  bottom: -20px;
   display: block;
   content: '';
   width: 100%;
-  height: 3px;
+  height: 5px;
   background-color: #3ca5fc;
   /*border-bottom: 3px solid #3ca5fc;*/
 }

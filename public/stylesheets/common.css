@@ -122,8 +122,9 @@ body {
   width: 100%;
 }
 
-.index-sections {
-  width: 1024px;
+.main-container .index-sections {
+  width: 71.1%;
+  padding: 0;
   margin-top: 50px;
 }
 .index-sections .one-section {
@@ -132,15 +133,37 @@ body {
 .index-sections .title-row {
   margin-bottom: 50px;
 }
+
+.index-sections .one-section.intro-section {
+  padding-bottom: 0;
+}
+
+.index-sections .one-section.intro-section .index-intro-row {
+
+}
+.index-sections .one-section.intro-section .separator-row {
+  margin-top: 0;
+}
+.index-sections .one-section.intro-section .index-intro-row .index-intro-link {
+  display: block;
+  width: 100%;
+}
+
+.index-sections .one-section.intro-section .index-intro-row .index-intro-link .index-intro-img{
+  width: 100%;
+}
+
 .index-sections .one-section .index-service-row {
 
 }
 .index-sections .one-section .index-service-row .index-service-link {
   display: block;
   width: 100%;
+  overflow: hidden;
 }
 
 .index-sections .one-section .index-service-row .index-service-link .index-service-img{
+  display: block;
   width: 100%;
 }
 
@@ -153,6 +176,7 @@ body {
 }
 
 .index-sections .one-section .index-industry-row .index-industry-link .index-industry-img{
+  display: block;
   width: 100%;
 }
 
@@ -165,21 +189,28 @@ body {
 }
 
 .index-sections .one-section .index-customers-row .index-customers-link .index-customers-img{
+  display: block;
   width: 100%;
 }
 
 @media (max-width: 1440px) and (min-width: 992px) {
+  .main-container .index-sections {
+
+  }
+  .index-sections .one-section.intro-section .index-intro-row .index-intro-link .index-intro-img{
+    /*width: 80%;*/
+  }
   .index-sections .one-section .index-service-row .index-service-link .index-service-img{
-    width: 80%;
+    /*width: 80%;*/
   }
   .index-sections .one-section .index-industry-row .index-industry-link .index-industry-img{
-    width: 80%;
+    /*width: 80%;*/
   }
   .index-sections .one-section .index-customers-row .index-customers-link .index-customers-img{
-    width: 80%;
+    /*width: 80%;*/
   }
   .index-sections .title-row {
-    padding-left: 60px;
+    /*padding-left: 60px;*/
   }
 }
 
@@ -189,12 +220,15 @@ body {
 }
 .index-sections .one-section .separator-row {
   width: 100%;
-  margin-top: 50px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   height: 25px;
   overflow: hidden;
 }
 .index-sections .one-section .separator-row img {
-
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 .index-sections .title1-img {
   width: 35px;

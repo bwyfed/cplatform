@@ -12,9 +12,10 @@
 
 .main-container .service-detail-container {
     position: relative;
+    width: 71.1%;
     /*top: -40px;*/
     background-color: white;
-    padding-top: 45px;
+    padding: 45px 0 0 0;
     /*border-radius: 10px;*/
     /*padding: 45px;*/
 }
@@ -27,13 +28,17 @@
     width: 100%;
     height: 38px;
     top: -38px;
-    margin: 0 -15px;
     border-radius: 10px 10px 0 0;
     background-color: white;
 }
 
 .service-detail-container .service-detail-box {
+    width: 100%;
+    padding: 0 45px;
+}
 
+.service-detail-container .service-detail-box .row {
+    margin: 0;
 }
 
 .service-detail-container .service-detail-box .solution-desc-box {
@@ -150,6 +155,11 @@
     text-align: center;
     display: inline-block;
     vertical-align: middle;
+}
+
+.service-detail-container .service-detail-box .industry-row .industry-item .industry-img-box .industry-img {
+    display: block;
+    width: 100%;
 }
 
 .service-detail-container .service-detail-box .telecom-row {

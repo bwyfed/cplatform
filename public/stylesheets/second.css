@@ -35,6 +35,7 @@
 .service-detail-container .service-detail-box {
     width: 100%;
     padding: 0 45px;
+    padding-bottom: 100px;
 }
 
 .service-detail-container .service-detail-box .row {

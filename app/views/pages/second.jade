@@ -88,9 +88,10 @@ block content
 
     mixin operate(data)
         each item in data.list
-            .row.operate-row
-                .operate-img-box
-                    img.operate-img.center-block(src="#{item.imgUrl}")
+            .row.second-normal-row.operate-row
+                .second-normal-item
+                    .second-normal-img-box.operate-img-box
+                        img.second-normal-img.operate-img(src="#{item.imgUrl}")
     mixin industry(data)
         each item,index in data.industry_list
             if index % 2 == 0
@@ -131,4 +132,8 @@ block content
                     img.second-normal-img(src="#{item.src}")
             if index % 3 == 2
                 </div>
+        .row.second-normal-row
+            .second-normal-item
+                .second-normal-img-box
+                    img.second-normal-img(src="/images/second/customers/text.png")
 

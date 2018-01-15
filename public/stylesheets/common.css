@@ -133,6 +133,13 @@ body {
 .index-sections .one-section.intro-section .separator-row {
   margin-top: 0; }
 
+.index-row-1 .index-link-1 {
+  display: block;
+  width: 100%; }
+  .index-row-1 .index-link-1 .index-img-1 {
+    display: block;
+    width: 100%; }
+
 .index-sections .one-section.intro-section .index-intro-row .index-intro-link {
   display: block;
   width: 100%; }

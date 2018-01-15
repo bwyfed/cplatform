@@ -32,44 +32,26 @@ block content
     .one-section.intro-section
       .row.index-intro-row
         a.index-intro-link
-          img.index-intro-img(src="/images/index/company-intro.png")
+          img.index-intro-img(src="#{intro.imgUrl}")
       .row.separator-row
         img.center-block(src="/images/separator.png")
 
     +onesection({
-        title1: '服务',
-        title2: 'Service'
+        title1: '发展历史',
+        title2: 'History of development'
     })
-      .row.index-service-row
-        .col-md-4
-          a.index-service-link(href="/second/service/solution")
-            img.index-service-img.pull-left(src='images/index/service-solution.png')
-          .cate-name.text-center 解决方案
-        .col-md-4
-          a.index-service-link(href="/second/service/product")
-            img.index-service-img.center-block(src='images/index/service-product.png')
-          .cate-name.text-center 产品技术
-        .col-md-4
-          a.index-service-link(href="/second/service/operate")
-            img.index-service-img.pull-right(src='images/index/service-operate.png')
-          .cate-name.text-center 运营服务
+      .row.index-row-1
+        a.index-link-1
+          img.index-img-1(src="#{sections.history.imgUrl}")
       .row.separator-row
         img.center-block(src="/images/separator.png")
 
     +onesection({
-        title1: '行业及解决方案',
-        title2: 'Industry and Solutions'
+        title1: '公司荣誉',
+        title2: 'Company honors'
     })
-      .row.index-industry-row
-        a.index-industry-link(href="/second/industry")
-          img.index-industry-img(src="images/index/industry.png")
+      .row.index-row-1
+        a.index-link-1
+          img.index-img-1(src="#{sections.honors.imgUrl}")
       .row.separator-row
         img.center-block(src="/images/separator.png")
-
-    +onesection({
-        title1: '合作客户',
-        title2: 'Cooperative customers'
-    })
-      .row.index-customers-row
-        a.index-customers-link(href="/second/customers")
-          img.index-customers-img(src="images/index/customers.png")

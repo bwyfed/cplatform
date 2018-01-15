@@ -5,5 +5,16 @@
       {"imgUrl": "/images/index/banner.png"},
       {"imgUrl": "/images/index/banner.png"}
     ]
+  },
+  "intro": {
+    "imgUrl": "/images/index/company-intro.png"
+  },
+  "sections": {
+    "history": {
+      "imgUrl": "/images/index/time-axis.png"
+    },
+    "honors": {
+      "imgUrl": "/images/index/honor.png"
+    }
   }
 }

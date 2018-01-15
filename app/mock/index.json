@@ -1,0 +1,9 @@
+{
+  "banner": {
+    "list": [
+      {"imgUrl": "/images/index/banner.png","active": true},
+      {"imgUrl": "/images/index/banner.png"},
+      {"imgUrl": "/images/index/banner.png"}
+    ]
+  }
+}

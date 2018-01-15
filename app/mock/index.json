@@ -14,7 +14,29 @@
       "imgUrl": "/images/index/time-axis.png"
     },
     "honors": {
-      "imgUrl": "/images/index/honor.png"
+      "imgUrl": "/images/index/honor.png",
+      "list": [
+        {
+          "title":"高新技术企业",
+          "desc": "获得高新技术企业认证、软件企业认证、ICP经营许可证、SP经营许可证"
+        },
+        {
+          "title": "行业资质",
+          "desc": "拥有CMMI三级、系统集成三级、ISO9000、ISO27001等多项资质"
+        },
+        {
+          "title": "荣誉资质",
+          "desc": "获德勤高科技高成长中国50强、亚太500强企业、新华社战略合作伙伴、中国移动战略合作伙伴、中国移动互联网业务系统产品优秀供应商"
+        },
+        {
+          "title": "30+项软件制作权证书",
+          "desc": "获30余款IT创新产品自主知识产权软件著作权证书"
+        },
+        {
+          "title": "14年行业沉淀",
+          "desc": "拥有多个行业的IT解决方案核心技术沉淀，奠定行业领先地位"
+        }
+      ]
     }
   }
 }

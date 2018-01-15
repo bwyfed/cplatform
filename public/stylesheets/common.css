@@ -7,6 +7,9 @@
 .blue-color {
   color: #1da6ff; }
 
+.bold {
+  font-weight: bold; }
+
 body {
   padding-top: 85px;
   font-family: "Microsoft YaHei","SimSun",helvetica,arial; }
@@ -139,6 +142,11 @@ body {
   .index-row-1 .index-link-1 .index-img-1 {
     display: block;
     width: 100%; }
+
+.honor-desc-box {
+  margin-top: 104px; }
+  .honor-desc-box .index-honer-row .honor-left .title {
+    padding-right: 6%; }
 
 .index-sections .one-section.intro-section .index-intro-row .index-intro-link {
   display: block;

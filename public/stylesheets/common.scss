@@ -1,5 +1,9 @@
+$black1: #161616;
+$font-size1: 20px;
+$font-size2: 16px;
+
 .black-color {
-  color: #161616;
+  color: $black1;
 }
 .orange-color {
   color: #f08c40;
@@ -7,7 +11,9 @@
 .blue-color {
   color: #1da6ff;
 }
-
+.bold {
+  font-weight: bold;
+}
 
 body {
   padding-top: 85px;
@@ -160,6 +166,17 @@ body {
     }
   }
 }
+
+  .honor-desc-box {
+    margin-top: 104px;
+    .index-honer-row {
+      .honor-left {
+        .title {
+          padding-right: 6%;
+        }
+      }
+    }
+  }
 
 .index-sections .one-section.intro-section .index-intro-row .index-intro-link {
   display: block;

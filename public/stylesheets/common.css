@@ -68,11 +68,11 @@ body {
   color: $active-color;
   margin-top: 3px;
 }
-.header .navbar-nav>li.active>a {
-  color: #161616;
-  background-color: white;
-}
 */
+.header .navbar-nav > li.active > a {
+  color: #999;
+  background-color: white; }
+
 .header .navbar-nav > li {
   position: relative; }
 

@@ -13,7 +13,8 @@ header.header
             #navbar-collapse-1.collapse.navbar-collapse
                 ul.nav.navbar-nav
                     li.nav-item.nav-item-index(data-active=".nav-item-index")
-                        a.dropdown-toggle(href="/") 首页
+                        a(href="/") 首页
+                        //-a.dropdown-toggle(href="/") 首页
                     //-li.nav-item-service-ctn.dropdown
                         a.dropdown-toggle(href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false") 服务
                         ul.dropdown-menu
@@ -28,12 +29,12 @@ header.header
                             li.divider(role="separator")
                     li.nav-item.nav-item-capability(data-active=".nav-item-capability")
                         a(href="/second/capability") 核心能力
-                    li.nav-item.nav-item-industry(data-active=".nav-item-industry")
-                        a(href="/second/industry") 产品服务
+                    li.nav-item.nav-item-product(data-active=".nav-item-product")
+                        a(href="/second/product") 产品服务
                     li.nav-item.nav-item-customers(data-active=".nav-item-customers")
                         a(href="/second/customers") 合作客户
-                    li.nav-item.nav-item-about(data-active=".nav-item-about")
-                        a(href="/second/about") 联系我们
+                    li.nav-item.nav-item-contact(data-active=".nav-item-contact")
+                        a(href="/second/contact") 联系我们
 
                 //form.navbar-form.navbar-left
                 //    .form-group

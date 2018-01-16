@@ -1,0 +1,18 @@
+extends ../layout
+
+block cssconent
+    link(rel='stylesheet', href='/stylesheets/second_page.css')
+
+block content
+    mixin bg()
+       .container-fluid.bg-container
+           .row
+               .bg-img
+                   img(src="/images/second/#{bgImg}")
+    mixin detail()
+        .container.service-detail-container
+            .container.service-detail-box
+                if block
+                    block
+
+    +bg()

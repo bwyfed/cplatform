@@ -7,12 +7,16 @@ $(function(){
     var pathname = window.location.pathname,
         pathmap = {
             '/': '.nav-item-index',
-            '/second/service/solution': '.nav-item-service-ctn',
-            '/second/service/product': '.nav-item-service-ctn',
-            '/second/service/operate': '.nav-item-service-ctn',
-            '/second/industry': '.nav-item-industry',
+            '/second/capability': '.nav-item-capability',
+            '/second/product': '.nav-item-product',
             '/second/customers': '.nav-item-customers',
-            '/second/about': '.nav-item-about'
+            '/second/contact': '.nav-item-contact'
+            // '/second/service/solution': '.nav-item-service-ctn',
+            // '/second/service/product': '.nav-item-service-ctn',
+            // '/second/service/operate': '.nav-item-service-ctn',
+            // '/second/industry': '.nav-item-industry',
+            // '/second/customers': '.nav-item-customers',
+            // '/second/about': '.nav-item-about'
         };
     if(activeItemClass!==pathmap[pathname]) {
         activeItemClass = pathmap[pathname];

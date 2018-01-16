@@ -1,0 +1,205 @@
+.main-container {
+    background-color: #f4f4f4;
+}
+
+.main-container .bg-container {
+
+}
+
+.main-container .bg-container .bg-img img {
+    width: 100%;
+}
+
+.main-container .service-detail-container {
+    position: relative;
+    width: 71.1%;
+    /*top: -40px;*/
+    background-color: white;
+    padding: 45px 0 0 0;
+    /*border-radius: 10px;*/
+    /*padding: 45px;*/
+}
+
+.main-container .service-detail-container::before {
+    position: absolute;
+    display: block;
+    z-index: 10;
+    content: '';
+    width: 100%;
+    height: 38px;
+    top: -38px;
+    border-radius: 10px 10px 0 0;
+    background-color: white;
+}
+
+.service-detail-container .service-detail-box {
+    width: 100%;
+    padding: 0 45px;
+    padding-bottom: 100px;
+}
+
+.service-detail-container .service-detail-box .row {
+    margin: 0;
+}
+/*服务-解决方案页面*/
+.service-detail-container .service-detail-box .solution-desc-box {
+    margin-bottom: 49px;
+}
+.service-detail-container .service-detail-box .solution-qa-box .solution-row {
+    margin-bottom: 40px;
+}
+
+.service-detail-container .service-detail-box .solution-qa-box .solution-row .second-normal-item.second-solution-item {
+    width: 80%;
+}
+.service-detail-container .service-detail-box .solution-qa-box .solution-row .second-normal-item.col-md-7 .second-normal-img-box {
+    width: 60%;
+}
+.service-detail-container .service-detail-box .solution-qa-box .solution-title-box {
+    position: relative;
+}
+
+.service-detail-container .service-detail-box .solution-qa-box .solution-title-box .solution-title {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 50%;
+    margin-top: -10px;
+    line-height: 1;
+    font-size: 20px;
+    color: white;
+}
+
+.service-detail-container .service-detail-box .solution-qa-box .solution-img-1 {
+    /*float: right;*/
+}
+
+.service-detail-container .service-detail-box .row .solution-answers {
+    list-style: none;
+    margin: 0;
+    padding:0;
+    color: #161616;
+    height: 202px;
+    padding-left: 10px;
+    padding-top: 20px;
+    /*-webkit-margin-before: 0;*/
+    /*-webkit-margin-after: 0;*/
+    /*-webkit-padding-start: 40px;*/
+}
+
+.service-detail-container .service-detail-box .row .solution-answers .answers-item {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.service-detail-container .service-detail-box .desc {
+    color: #161616;
+    font-size: 20px;
+}
+
+.service-detail-container .service-detail-box .operate-row {
+    margin-bottom: 60px;
+}
+
+.service-detail-container .service-detail-box .operate-row:last-child {
+    margin-bottom: 0;
+}
+
+.service-detail-container .service-detail-box .row .question {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+
+.service-detail-container .service-detail-box .row .product-title {
+    color: #161616;
+    font-size: 20px;
+    padding-left: 28px;
+}
+.service-detail-container .service-detail-box .row .product-desc {
+    color: #161616;
+    font-size: 16px;
+    padding-left: 28px;
+}
+
+.service-detail-container .service-detail-box .product-row {
+    margin-bottom: 50px;
+}
+/*服务-产品技术*/
+.service-detail-container .service-detail-box .product-row .col-md-6 .product-desc-box {
+    border: 1px solid #999999;
+    width: 80%;
+    height: 120px;
+}
+
+.service-detail-container .service-detail-box .product-row .col-md-6 .product-img {
+    width: 80%;
+}
+
+.service-detail-container .service-detail-box .product-row .col-md-6 .product-img img{
+    /*width: 400px;*/
+}
+/*行业及解决方案*/
+.service-detail-container .service-detail-box .industry-row {
+    margin-bottom: 30px;
+}
+.service-detail-container .service-detail-box .industry-row .industry-item {
+    position: relative;
+}
+.service-detail-container .service-detail-box .industry-row .industry-item .industry-title {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    color: white;
+    font-size: 30px;
+}
+.service-detail-container .service-detail-box .industry-row .industry-item .industry-title::before {
+    content: " ";
+    display: inline-block;
+    height: 100%;
+    width: 1%;
+    vertical-align: middle;
+}
+.service-detail-container .service-detail-box .industry-row .industry-item .industry-title .text {
+    width: 98%;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.service-detail-container .service-detail-box .industry-row .industry-item .industry-img-box .industry-img {
+    display: block;
+    width: 100%;
+}
+
+.service-detail-container .service-detail-box .telecom-row {
+    margin-bottom: 30px;
+}
+
+.service-detail-container .service-detail-box .telecom-row .telecom-img img {
+    width: 105px;
+}
+
+.service-detail-container .service-detail-box .telecom-row .telecom-title {
+    color: #161616;
+    font-size: 20px;
+}
+
+.service-detail-container .service-detail-box .telecom-title-1 {
+    color: #161616;
+    font-size: 30px;
+    margin-bottom: 50px;
+    padding-left: 50px;
+}
+/*二级页面中通用的图片样式*/
+.service-detail-container .service-detail-box .second-normal-row {
+    margin-bottom: 40px;
+}
+
+.second-normal-row .second-normal-item .second-normal-img-box .second-normal-img {
+    display: block;
+    width: 100%;
+}

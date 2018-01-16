@@ -1,6 +1,10 @@
 $black1: #161616;
-$font-size1: 20px;
-$font-size2: 16px;
+$font-size1: 30px;
+$fontSize1: 0.3rem;
+$font-size2: 20px;
+$fontSize2: 0.2rem;
+$font-size3: 16px;
+$fontSize3: 0.16rem;
 $active-color: #999;
 
 .black-color {
@@ -49,7 +53,7 @@ body {
   width: 67px;
 }
 .navbar-brand .company-name {
-  font-size: 28px;
+  font-size: $fontSize1;
   font-weight: bold;
   margin-left: 14px;
   vertical-align: middle;
@@ -57,13 +61,12 @@ body {
 .header .navbar-nav {
   padding-top: 15px;
   padding-left: 80px;
-  font-size: 20px;
 }
 .header .navbar-nav>.nav-item {
   margin-left: 30px;
 }
 .header .navbar-nav a {
-  font-size: 16px;
+  font-size: $fontSize2;
   font-weight: bold;
 }
 .header .navbar-nav>.nav-item-service-ctn {
@@ -72,6 +75,7 @@ body {
 .header .navbar-nav li a {
   color: #161616;
 }
+/*
 .header .navbar-nav li.active>a:hover {
   //background-color: white;
   color: $active-color;
@@ -81,6 +85,7 @@ body {
   color: #161616;
   background-color: white;
 }
+*/
 .header .navbar-nav>li {
   position: relative;
 }

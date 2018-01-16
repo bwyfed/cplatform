@@ -1,0 +1,68 @@
+{
+  "desc": [
+    "紧跟前沿技术，动态掌握行业发展态势",
+    "为客户提供最贴合自身发展的IT解决方案，助力传统行业的IT升级和互联网改造。"
+  ],
+  "steplist": [
+    {
+      "title": "需求分析阶段",
+      "titleImgUrl": "/images/second/service/solution/1.png",
+      "imgUrl1": "/images/second/service/solution/1-1.png",
+      "sublist": [
+        "需求调研",
+        "分阶段确认需求",
+        "市场及竞品分析",
+        "行业理解及可行性研究报告"
+      ]
+    },
+    {
+      "title": "解决方案生成阶段",
+      "titleImgUrl": "/images/second/service/solution/2.png",
+      "imgUrl1": "/images/second/service/solution/2-1.png",
+      "sublist": [
+        "定制IT解决方案",
+        "产品功能交互原型",
+        "设计应用情景",
+        "整合解决方案"
+      ]
+    },
+    {
+      "title": "为客户解决哪些问题",
+      "titleImgUrl": "/images/second/service/solution/3.png",
+      "imgUrl1": "/images/second/service/solution/3-1.png",
+      "sublist": [
+        "抓住市场机遇，拥抱新商机",
+        "提高工作效率，降低管理风险",
+        "创新客户体验，重塑生产力"
+      ]
+    }
+  ],
+  "productlist": [
+    {
+      "imgUrl": "/images/second/service/solution/li-1.png"
+    },
+    {
+      "imgUrl": "/images/second/service/solution/li-2.png"
+    },
+    {
+      "imgUrl": "/images/second/service/solution/li-3.png"
+    },
+    {
+      "imgUrl": "/images/second/service/solution/li-4.png"
+    }
+  ],
+  "operatelist": [
+    {
+    "imgUrl": "/images/second/service/solution/operate-1.png"
+    },
+    {
+    "imgUrl": "/images/second/service/solution/operate-2.png"
+    },
+    {
+    "imgUrl": "/images/second/service/solution/operate-3.png"
+    },
+    {
+    "imgUrl": "/images/second/service/solution/operate-4.png"
+    }
+  ]
+}

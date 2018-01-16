@@ -11,8 +11,46 @@ block content
                    img(src="/images/second/#{bgImg}")
     mixin detail()
         .container.service-detail-container
-            .container.service-detail-box
-                if block
-                    block
+            if block
+                block
 
     +bg()
+
+    if type == 'capability'
+        +detail()
+            +solution(data)
+
+
+    mixin solution(data)
+        .container.service-detail-box
+            .solution-desc-box
+                each item in data.desc
+                    p.text-center.desc #{item}
+            .container-fluid.solution-qa-box
+                each item in data.steplist
+                    .row.second-normal-row.solution-row
+                        .center-block.second-normal-item.second-solution-item
+                            .second-normal-img-box.solution-title-box
+                                img.second-normal-img.solution-title-img.center-block(src="#{item.titleImgUrl}")
+                                .solution-title #{item.title}
+                    .row.second-normal-row.solution-row
+                        .second-normal-item.col-md-7
+                            .second-normal-img-box.center-block
+                                img.solution-img-1.second-normal-img(src="#{item.imgUrl1}")
+                        .col-md-5
+                            ul.solution-answers
+                                each item2 in item.sublist
+                                    li.answers-item -&nbsp;#{item2}
+        .container-fluid.capability-box
+            .row.second-normal-row.separator-row
+                img.center-block(src="/images/separator.png")
+            each item in data.productlist
+                .row.second-normal-row
+                    img(src="#{item.imgUrl}")
+            .row.second-normal-row.separator-row
+                img.center-block(src="/images/separator.png")
+            each item in data.operatelist
+                .row.second-normal-row
+                    img(src="#{item.imgUrl}")
+
+

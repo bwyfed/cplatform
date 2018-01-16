@@ -7,6 +7,7 @@ var router = express.Router();
 var data_service = require('../app/mock/service.json');
 var data_industry = require('../app/mock/industry.json');
 var data_customers = require('../app/mock/customers.json');
+var data_capability = require('../app/mock/capability.json');
 
 let subtype_map = {
     '': {
@@ -14,7 +15,9 @@ let subtype_map = {
     },
     'capability':{
         'title': '核心能力丨宽连十方',
-        'bgImg': 'capability/bgtop.png'
+        'bgImg': 'capability/bgtop.png',
+        'type': 'capability',
+        'data': data_capability
     },
     'product': {
         'title': '产品服务丨宽连十方',

@@ -55,8 +55,8 @@ block content
           img.index-img-1(src="#{sections.honors.imgUrl}")
       .honor-desc-box
         each item in sections.honors.list
-          .row.index-honer-row
+          .row.index-honor-row
             .col-md-4.honor-left
-              .title.text-right.black-color.bold=item.title
-            .col-md-8.honer-right
-              .desc.black-color=item.desc
+              .title.text-right=item.title
+            .col-md-8.honor-right
+              .desc=item.desc

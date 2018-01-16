@@ -175,11 +175,31 @@ body {
 }
 
   .honor-desc-box {
-    margin-top: 104px;
-    .index-honer-row {
+    margin-top: 1.04rem;
+    .index-honor-row {
+      display: table;
+      width: 100%;
+      color: $black1;
+      margin-bottom: 0.8rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      [class*="col-"] {
+        float: none;
+        display: table-cell;
+        vertical-align: middle;
+      }
       .honor-left {
         .title {
           padding-right: 6%;
+          font-size: $fontSize2;
+          font-weight: bold;
+        }
+      }
+      .honor-right {
+        .desc {
+          font-size: $fontSize3;
+          line-height: 1.5;
         }
       }
     }
@@ -305,14 +325,19 @@ body {
 
 .footer {
   background-color: #26292E;
-  font-size: 18px;
-  padding-top: 50px;
+  padding-top: 0.5rem;
 }
 .footer .row {
   border-bottom: 18px;
 }
 .footer .row.footer-delimiter {
   border-bottom: 1px dashed #4e5155;
+  font-size: $fontSize2;
+  .footer-left {
+    .footer-header {
+      margin-bottom: 0.4rem;
+    }
+  }
 }
 .footer .img img {
   width: 100px;
@@ -337,6 +362,7 @@ body {
 
 .footer .copyright {
   color: #4e5155;
+  font-size: $fontSize2;
   padding: 18px 0;
 }
 

@@ -1,3 +1,4 @@
+@import "global";
 .main-container {
     background-color: #f4f4f4;
 }
@@ -33,6 +34,8 @@
 }
 
 .separator-row {
+    height: 20px;
+    overflow: hidden;
     img {
         display: block;
         width: 100%;
@@ -41,79 +44,104 @@
 
 //二级页面的样式
 .service-detail-container{
-    .service-detail-box {
-        width: 100%;
-        padding: 0 45px;
-        padding-bottom: 50px;
-        .row {
-            margin: 0;
+
+}
+
+.capability-solution-box {
+    width: 100%;
+    padding: 0 45px;
+    padding-bottom: 50px;
+    .row {
+        margin: 0;
+    }
+    .solution-desc-box {
+        margin-bottom: 49px;
+        .desc {
+            color: $black2;
+            font-size: $fontSize2;
         }
-        .solution-desc-box {
-            margin-bottom: 49px;
-            .desc {
-                color: #161616;
-                font-size: 20px;
-            }
+    }
+    .solution-qa-box {
+        .solution-row {
+            margin-bottom: 40px;
         }
-        .solution-qa-box {
-            .solution-row {
-                margin-bottom: 40px;
-            }
-            .second-normal-row {
-                margin-bottom: 40px;
-                .second-normal-item {
-                    .second-normal-img-box {
-                        .second-normal-img {
-                            display: block;
-                            width: 100%;
-                        }
-                        .solution-img-1 {
-                            /*float: right;*/
-                        }
-                    }
-                    .solution-title-box {
-                        position: relative;
-                    }
-                    .solution-title-box .solution-title {
-                        position: absolute;
+        .second-normal-row {
+            margin-bottom: 40px;
+            .second-normal-item {
+                .second-normal-img-box {
+                    .second-normal-img {
+                        display: block;
                         width: 100%;
-                        height: 100%;
-                        text-align: center;
-                        top: 50%;
-                        margin-top: -10px;
-                        line-height: 1;
-                        font-size: 20px;
-                        color: white;
                     }
-                    &.second-solution-item {
-                        width: 80%;
+                    .solution-img-1 {
+                        /*float: right;*/
                     }
-                    &.col-md-7 .second-normal-img-box {
-                        width: 60%;
-                    }
-
                 }
-                .solution-answers {
-                    list-style: none;
-                    margin: 0;
-                    padding:0;
-                    color: #161616;
-                    height: 202px;
-                    padding-left: 10px;
-                    padding-top: 20px;
-                    .answers-item {
-                        font-size: 16px;
-                        margin-bottom: 10px;
-                    }
+                .solution-title-box {
+                    position: relative;
+                }
+                .solution-title-box .solution-title {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    top: 50%;
+                    margin-top: -10px;
+                    line-height: 1;
+                    font-size: 20px;
+                    color: white;
+                }
+                &.second-solution-item {
+                    width: 80%;
+                }
+                &.col-md-7 .second-normal-img-box {
+                    width: 60%;
                 }
 
             }
+            .solution-answers {
+                list-style: none;
+                margin: 0;
+                padding:0;
+                color: #161616;
+                height: 202px;
+                padding-left: 10px;
+                padding-top: 20px;
+                .answers-item {
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                }
+            }
+
         }
     }
 }
-
+.title-row {
+    .title-item {
+        display: inline-block;
+        padding: 0;
+        vertical-align: middle;
+        &.img-box {
+            font-size: 0;
+            width: $fontSize1;
+            .title-img {
+                display: block;
+                width: 100%;
+            }
+        }
+        &.title1 {
+            font-size: $fontSize1;
+            color: $black1;
+            margin-left: 30px;
+        }
+        &.title2 {
+            font-size: $fontSize1;
+            color: $black2;
+            margin-left: 40px;
+        }
+    }
+}
 .capability-product-box,.capability-operate-box {
-    padding: 100px 45px;
     .capability-product-row,.capability-operate-row {
         .capability-product-img,.capability-operate-img {
             display: block;
@@ -126,8 +154,11 @@
             margin-bottom: 0;
         }
     }
+    &.capability-product-box {
+        padding: 0 55px 60px;
+    }
     &.capability-operate-box {
-        padding: 100px 55px 190px;
+        padding: 0 55px 100px;
     }
 }
 

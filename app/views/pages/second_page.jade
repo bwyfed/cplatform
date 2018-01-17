@@ -24,8 +24,18 @@ block content
             +product(data.industry_list)
 
 
+    mixin title(data)
+        .row.title-row&attributes(attributes)
+            .title-item.img-box
+                img.title-img(src="/images/title1.png")
+            .title-item.title1.title-item #{data.title1}
+            .title-item.title2.title-item #{data.title2}
     mixin capability(data)
-        .container.service-detail-box
+        .container.capability-solution-box
+            +title({
+                "title1": "解决方案1",
+                "title2": "Solution"
+            })(style='margin-bottom: 0.64rem;')
             .solution-desc-box
                 each item in data.desc
                     p.text-center.desc #{item}
@@ -47,12 +57,20 @@ block content
         .row.separator-row
             img.center-block(src="/images/separator.png")
         .container-fluid.capability-product-box
+            +title({
+                "title1": "产品技术",
+                "title2": "Product"
+            })(style='margin-top:0.6rem;margin-bottom: 0.9rem;')
             each item in data.productlist
                 .row.capability-product-row
                     img.capability-product-img(src="#{item.imgUrl}")
         .row.separator-row
             img.center-block(src="/images/separator.png")
         .container-fluid.capability-operate-box
+            +title({
+                "title1": "运营服务",
+                "title2": "Marketing"
+            })(style='margin-top:0.6rem;margin-bottom: 0.9rem;')
             each item in data.operatelist
                 .row.capability-operate-row
                     img.capability-operate-img(src="#{item.imgUrl}")

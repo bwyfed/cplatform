@@ -25,33 +25,36 @@
   border-radius: 10px 10px 0 0;
   background-color: white; }
 
-.separator-row img {
-  display: block;
-  width: 100%; }
+.separator-row {
+  height: 20px;
+  overflow: hidden; }
+  .separator-row img {
+    display: block;
+    width: 100%; }
 
-.service-detail-container .service-detail-box {
+.capability-solution-box {
   width: 100%;
   padding: 0 45px;
   padding-bottom: 50px; }
-  .service-detail-container .service-detail-box .row {
+  .capability-solution-box .row {
     margin: 0; }
-  .service-detail-container .service-detail-box .solution-desc-box {
+  .capability-solution-box .solution-desc-box {
     margin-bottom: 49px; }
-    .service-detail-container .service-detail-box .solution-desc-box .desc {
-      color: #161616;
-      font-size: 20px; }
-  .service-detail-container .service-detail-box .solution-qa-box .solution-row {
+    .capability-solution-box .solution-desc-box .desc {
+      color: #999999;
+      font-size: 0.2rem; }
+  .capability-solution-box .solution-qa-box .solution-row {
     margin-bottom: 40px; }
-  .service-detail-container .service-detail-box .solution-qa-box .second-normal-row {
+  .capability-solution-box .solution-qa-box .second-normal-row {
     margin-bottom: 40px; }
-    .service-detail-container .service-detail-box .solution-qa-box .second-normal-row .second-normal-item .second-normal-img-box .second-normal-img {
+    .capability-solution-box .solution-qa-box .second-normal-row .second-normal-item .second-normal-img-box .second-normal-img {
       display: block;
       width: 100%; }
-    .service-detail-container .service-detail-box .solution-qa-box .second-normal-row .second-normal-item .second-normal-img-box .solution-img-1 {
+    .capability-solution-box .solution-qa-box .second-normal-row .second-normal-item .second-normal-img-box .solution-img-1 {
       /*float: right;*/ }
-    .service-detail-container .service-detail-box .solution-qa-box .second-normal-row .second-normal-item .solution-title-box {
+    .capability-solution-box .solution-qa-box .second-normal-row .second-normal-item .solution-title-box {
       position: relative; }
-    .service-detail-container .service-detail-box .solution-qa-box .second-normal-row .second-normal-item .solution-title-box .solution-title {
+    .capability-solution-box .solution-qa-box .second-normal-row .second-normal-item .solution-title-box .solution-title {
       position: absolute;
       width: 100%;
       height: 100%;
@@ -61,11 +64,11 @@
       line-height: 1;
       font-size: 20px;
       color: white; }
-    .service-detail-container .service-detail-box .solution-qa-box .second-normal-row .second-normal-item.second-solution-item {
+    .capability-solution-box .solution-qa-box .second-normal-row .second-normal-item.second-solution-item {
       width: 80%; }
-    .service-detail-container .service-detail-box .solution-qa-box .second-normal-row .second-normal-item.col-md-7 .second-normal-img-box {
+    .capability-solution-box .solution-qa-box .second-normal-row .second-normal-item.col-md-7 .second-normal-img-box {
       width: 60%; }
-    .service-detail-container .service-detail-box .solution-qa-box .second-normal-row .solution-answers {
+    .capability-solution-box .solution-qa-box .second-normal-row .solution-answers {
       list-style: none;
       margin: 0;
       padding: 0;
@@ -73,21 +76,43 @@
       height: 202px;
       padding-left: 10px;
       padding-top: 20px; }
-      .service-detail-container .service-detail-box .solution-qa-box .second-normal-row .solution-answers .answers-item {
+      .capability-solution-box .solution-qa-box .second-normal-row .solution-answers .answers-item {
         font-size: 16px;
         margin-bottom: 10px; }
 
-.capability-product-box, .capability-operate-box {
-  padding: 100px 45px; }
-  .capability-product-box .capability-product-row .capability-product-img, .capability-product-box .capability-product-row .capability-operate-img, .capability-product-box .capability-operate-row .capability-product-img, .capability-product-box .capability-operate-row .capability-operate-img, .capability-operate-box .capability-product-row .capability-product-img, .capability-operate-box .capability-product-row .capability-operate-img, .capability-operate-box .capability-operate-row .capability-product-img, .capability-operate-box .capability-operate-row .capability-operate-img {
-    display: block;
-    width: 100%; }
-  .capability-product-box .capability-product-row, .capability-operate-box .capability-product-row {
-    margin-bottom: 90px; }
-    .capability-product-box .capability-product-row:last-child, .capability-operate-box .capability-product-row:last-child {
-      margin-bottom: 0; }
-  .capability-product-box.capability-operate-box, .capability-operate-box.capability-operate-box {
-    padding: 100px 55px 190px; }
+.title-row .title-item {
+  display: inline-block;
+  padding: 0;
+  vertical-align: middle; }
+  .title-row .title-item.img-box {
+    font-size: 0;
+    width: 0.3rem; }
+    .title-row .title-item.img-box .title-img {
+      display: block;
+      width: 100%; }
+  .title-row .title-item.title1 {
+    font-size: 0.3rem;
+    color: #161616;
+    margin-left: 30px; }
+  .title-row .title-item.title2 {
+    font-size: 0.3rem;
+    color: #999999;
+    margin-left: 40px; }
+
+.capability-product-box .capability-product-row .capability-product-img, .capability-product-box .capability-product-row .capability-operate-img, .capability-product-box .capability-operate-row .capability-product-img, .capability-product-box .capability-operate-row .capability-operate-img, .capability-operate-box .capability-product-row .capability-product-img, .capability-operate-box .capability-product-row .capability-operate-img, .capability-operate-box .capability-operate-row .capability-product-img, .capability-operate-box .capability-operate-row .capability-operate-img {
+  display: block;
+  width: 100%; }
+
+.capability-product-box .capability-product-row, .capability-operate-box .capability-product-row {
+  margin-bottom: 90px; }
+  .capability-product-box .capability-product-row:last-child, .capability-operate-box .capability-product-row:last-child {
+    margin-bottom: 0; }
+
+.capability-product-box.capability-product-box, .capability-operate-box.capability-product-box {
+  padding: 0 55px 60px; }
+
+.capability-product-box.capability-operate-box, .capability-operate-box.capability-operate-box {
+  padding: 0 55px 100px; }
 
 .product-box {
   width: 100%; }

@@ -131,6 +131,21 @@
     }
 }
 
+.product-box {
+    width: 100%;
+    .product-row {
+        padding: 0 50px 40px;
+        .product-item {
+            .product-img-box {
+                .product-img {
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
 .service-detail-container .service-detail-box .operate-row {
     margin-bottom: 60px;
 }

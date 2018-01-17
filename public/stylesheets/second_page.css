@@ -89,6 +89,14 @@
   .capability-product-box.capability-operate-box, .capability-operate-box.capability-operate-box {
     padding: 100px 55px 190px; }
 
+.product-box {
+  width: 100%; }
+  .product-box .product-row {
+    padding: 0 50px 40px; }
+    .product-box .product-row .product-item .product-img-box .product-img {
+      display: block;
+      width: 100%; }
+
 .service-detail-container .service-detail-box .operate-row {
   margin-bottom: 60px; }
 

@@ -19,6 +19,9 @@ block content
     if type == 'capability'
         +detail()
             +capability(data)
+    else if type == 'product'
+        +detail()
+            +product(data.industry_list)
 
 
     mixin capability(data)
@@ -54,4 +57,14 @@ block content
                 .row.capability-operate-row
                     img.capability-operate-img(src="#{item.imgUrl}")
 
+    mixin product(list)
+        .container.product-box
+            each item,index in list
+                if index % 2 == 0
+                    <div class="row product-row">
+                .col-md-6.product-item
+                    .center-block.product-img-box
+                        img.product-img(src="#{item.imgUrl}")
+                if index % 2 == 1
+                    </div>
 

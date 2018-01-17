@@ -8,6 +8,7 @@ var data_service = require('../app/mock/service.json');
 var data_industry = require('../app/mock/industry.json');
 var data_customers = require('../app/mock/customers.json');
 var data_capability = require('../app/mock/capability.json');
+var data_product = require('../app/mock/product.json');
 
 let subtype_map = {
     '': {
@@ -21,7 +22,9 @@ let subtype_map = {
     },
     'product': {
         'title': '产品服务丨宽连十方',
-        'bgImg': 'product/bgtop.png'
+        'bgImg': 'product/bgtop.png',
+        'type': 'product',
+        'data': data_product
     },
     'customers': {
         'title': '合作客户丨宽连十方',

@@ -25,63 +25,69 @@
   border-radius: 10px 10px 0 0;
   background-color: white; }
 
+.separator-row img {
+  display: block;
+  width: 100%; }
+
 .service-detail-container .service-detail-box {
   width: 100%;
   padding: 0 45px;
-  padding-bottom: 100px; }
+  padding-bottom: 50px; }
+  .service-detail-container .service-detail-box .row {
+    margin: 0; }
+  .service-detail-container .service-detail-box .solution-desc-box {
+    margin-bottom: 49px; }
+    .service-detail-container .service-detail-box .solution-desc-box .desc {
+      color: #161616;
+      font-size: 20px; }
+  .service-detail-container .service-detail-box .solution-qa-box .solution-row {
+    margin-bottom: 40px; }
+  .service-detail-container .service-detail-box .solution-qa-box .second-normal-row {
+    margin-bottom: 40px; }
+    .service-detail-container .service-detail-box .solution-qa-box .second-normal-row .second-normal-item .second-normal-img-box .second-normal-img {
+      display: block;
+      width: 100%; }
+    .service-detail-container .service-detail-box .solution-qa-box .second-normal-row .second-normal-item .second-normal-img-box .solution-img-1 {
+      /*float: right;*/ }
+    .service-detail-container .service-detail-box .solution-qa-box .second-normal-row .second-normal-item .solution-title-box {
+      position: relative; }
+    .service-detail-container .service-detail-box .solution-qa-box .second-normal-row .second-normal-item .solution-title-box .solution-title {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      top: 50%;
+      margin-top: -10px;
+      line-height: 1;
+      font-size: 20px;
+      color: white; }
+    .service-detail-container .service-detail-box .solution-qa-box .second-normal-row .second-normal-item.second-solution-item {
+      width: 80%; }
+    .service-detail-container .service-detail-box .solution-qa-box .second-normal-row .second-normal-item.col-md-7 .second-normal-img-box {
+      width: 60%; }
+    .service-detail-container .service-detail-box .solution-qa-box .second-normal-row .solution-answers {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      color: #161616;
+      height: 202px;
+      padding-left: 10px;
+      padding-top: 20px; }
+      .service-detail-container .service-detail-box .solution-qa-box .second-normal-row .solution-answers .answers-item {
+        font-size: 16px;
+        margin-bottom: 10px; }
 
-.service-detail-container .service-detail-box .row {
-  margin: 0; }
-
-/*服务-解决方案页面*/
-.service-detail-container .service-detail-box .solution-desc-box {
-  margin-bottom: 49px; }
-
-.service-detail-container .service-detail-box .solution-qa-box .solution-row {
-  margin-bottom: 40px; }
-
-.service-detail-container .service-detail-box .solution-qa-box .solution-row .second-normal-item.second-solution-item {
-  width: 80%; }
-
-.service-detail-container .service-detail-box .solution-qa-box .solution-row .second-normal-item.col-md-7 .second-normal-img-box {
-  width: 60%; }
-
-.service-detail-container .service-detail-box .solution-qa-box .solution-title-box {
-  position: relative; }
-
-.service-detail-container .service-detail-box .solution-qa-box .solution-title-box .solution-title {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  top: 50%;
-  margin-top: -10px;
-  line-height: 1;
-  font-size: 20px;
-  color: white; }
-
-.service-detail-container .service-detail-box .solution-qa-box .solution-img-1 {
-  /*float: right;*/ }
-
-.service-detail-container .service-detail-box .row .solution-answers {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  color: #161616;
-  height: 202px;
-  padding-left: 10px;
-  padding-top: 20px;
-  /*-webkit-margin-before: 0;*/
-  /*-webkit-margin-after: 0;*/
-  /*-webkit-padding-start: 40px;*/ }
-
-.service-detail-container .service-detail-box .row .solution-answers .answers-item {
-  font-size: 16px;
-  margin-bottom: 10px; }
-
-.service-detail-container .service-detail-box .desc {
-  color: #161616;
-  font-size: 20px; }
+.capability-product-box, .capability-operate-box {
+  padding: 100px 45px; }
+  .capability-product-box .capability-product-row .capability-product-img, .capability-product-box .capability-product-row .capability-operate-img, .capability-product-box .capability-operate-row .capability-product-img, .capability-product-box .capability-operate-row .capability-operate-img, .capability-operate-box .capability-product-row .capability-product-img, .capability-operate-box .capability-product-row .capability-operate-img, .capability-operate-box .capability-operate-row .capability-product-img, .capability-operate-box .capability-operate-row .capability-operate-img {
+    display: block;
+    width: 100%; }
+  .capability-product-box .capability-product-row, .capability-operate-box .capability-product-row {
+    margin-bottom: 90px; }
+    .capability-product-box .capability-product-row:last-child, .capability-operate-box .capability-product-row:last-child {
+      margin-bottom: 0; }
+  .capability-product-box.capability-operate-box, .capability-operate-box.capability-operate-box {
+    padding: 100px 55px 190px; }
 
 .service-detail-container .service-detail-box .operate-row {
   margin-bottom: 60px; }
@@ -167,16 +173,10 @@
   margin-bottom: 50px;
   padding-left: 50px; }
 
-/*二级页面中通用的图片样式*/
-.service-detail-container .service-detail-box .second-normal-row {
-  margin-bottom: 40px; }
-
-.second-normal-row .second-normal-item .second-normal-img-box .second-normal-img {
-  display: block;
-  width: 100%; }
-
-.capability-box img {
-  display: block;
-  width: 100%; }
+.capability-box {
+  padding: 0 45px; }
+  .capability-box img {
+    display: block;
+    width: 100%; }
 
 /*# sourceMappingURL=second_page.css.map */

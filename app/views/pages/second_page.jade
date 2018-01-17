@@ -18,22 +18,22 @@ block content
 
     if type == 'capability'
         +detail()
-            +solution(data)
+            +capability(data)
 
 
-    mixin solution(data)
+    mixin capability(data)
         .container.service-detail-box
             .solution-desc-box
                 each item in data.desc
                     p.text-center.desc #{item}
             .container-fluid.solution-qa-box
                 each item in data.steplist
-                    .row.second-normal-row.solution-row
+                    .row.second-normal-row
                         .center-block.second-normal-item.second-solution-item
                             .second-normal-img-box.solution-title-box
                                 img.second-normal-img.solution-title-img.center-block(src="#{item.titleImgUrl}")
                                 .solution-title #{item.title}
-                    .row.second-normal-row.solution-row
+                    .row.second-normal-row
                         .second-normal-item.col-md-7
                             .second-normal-img-box.center-block
                                 img.solution-img-1.second-normal-img(src="#{item.imgUrl1}")
@@ -41,16 +41,17 @@ block content
                             ul.solution-answers
                                 each item2 in item.sublist
                                     li.answers-item -&nbsp;#{item2}
-        .container-fluid.capability-box
-            .row.second-normal-row.separator-row
-                img.center-block(src="/images/separator.png")
+        .row.separator-row
+            img.center-block(src="/images/separator.png")
+        .container-fluid.capability-product-box
             each item in data.productlist
-                .row.second-normal-row
-                    img(src="#{item.imgUrl}")
-            .row.second-normal-row.separator-row
-                img.center-block(src="/images/separator.png")
+                .row.capability-product-row
+                    img.capability-product-img(src="#{item.imgUrl}")
+        .row.separator-row
+            img.center-block(src="/images/separator.png")
+        .container-fluid.capability-operate-box
             each item in data.operatelist
-                .row.second-normal-row
-                    img(src="#{item.imgUrl}")
+                .row.capability-operate-row
+                    img.capability-operate-img(src="#{item.imgUrl}")
 
 

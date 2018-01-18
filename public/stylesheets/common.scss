@@ -128,32 +128,31 @@ body {
 .carousel-inner>.item>a>img, .carousel-inner>.item>img {
   width: 100%;
 }
-
+.separator-row {
+  width: 100%;
+  margin: $indexSeparatorMargin1 0 $indexSeparatorMargin2;
+  img {
+    display: block;
+    width: 100%;
+  }
+}
 .main-container .index-sections {
   width: 71.11%;
-  padding: 0;
   /*margin-top: 50px;*/
 }
-.index-sections .one-section {
-  padding-bottom: 50px;
-}
 .index-sections .one-section:last-child {
-  padding-bottom: 100px;
+  padding-bottom: $indexMargin1;
 }
 .index-sections .title-row {
   margin-bottom: 50px;
 }
 
 .index-sections .one-section.intro-section {
-  padding-bottom: 0;
+  padding: $indexMargin1 0 0;
   .index-intro-row {
     margin-left: 0;
     margin-right: 0;
   }
-}
-
-.index-sections .one-section.intro-section .separator-row {
-  margin-top: 0;
 }
 
 //设置首页区块的各种样式
@@ -274,17 +273,6 @@ body {
 .index-sections .one-section .thumbnail {
   margin: 0;
   padding: 0;
-}
-.index-sections .one-section .separator-row {
-  width: 100%;
-  margin: 0.4rem 0;
-  height: 0.2rem;
-  overflow: hidden;
-}
-.index-sections .one-section .separator-row img {
-  display: block;
-  width: 100%;
-  height: 100%;
 }
 .index-sections .title1-img {
   width: 35px;

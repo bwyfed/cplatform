@@ -7,7 +7,7 @@
 
 .main-container .service-detail-container {
   position: relative;
-  width: 71.1%;
+  width: 87.78%;
   /*top: -40px;*/
   background-color: white;
   padding: 45px 0 0 0;
@@ -119,6 +119,15 @@
   .product-box .product-row {
     padding: 0 50px 40px; }
     .product-box .product-row .product-item .product-img-box .product-img {
+      display: block;
+      width: 100%; }
+
+.customers-box {
+  width: 81.01%;
+  padding: 0 0 0.2rem; }
+  .customers-box .customers-row {
+    margin-bottom: 0.12rem; }
+    .customers-box .customers-row .customers-item .customers-img-box .customers-img {
       display: block;
       width: 100%; }
 

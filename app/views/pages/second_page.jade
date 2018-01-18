@@ -22,7 +22,9 @@ block content
     else if type == 'product'
         +detail()
             +product(data.industry_list)
-
+    else if type == 'customers'
+        +detail()
+            +customers(data)
 
     mixin title(data)
         .row.title-row&attributes(attributes)
@@ -84,5 +86,16 @@ block content
                     .center-block.product-img-box
                         img.product-img(src="#{item.imgUrl}")
                 if index % 2 == 1
+                    </div>
+
+    mixin customers(data)
+        .container.customers-box
+            each item,index in data.imglist
+                if index % 3 == 0
+                    <div class="row customers-row">
+                .customers-item.col-md-4
+                    .customers-img-box
+                        img.customers-img(src="#{item.src}")
+                if index % 3 == 2
                     </div>
 

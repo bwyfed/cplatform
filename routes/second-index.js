@@ -28,7 +28,9 @@ let subtype_map = {
     },
     'customers': {
         'title': '合作客户丨宽连十方',
-        'bgImg': 'customers/bgtop.png'
+        'bgImg': 'customers/bgtop.png',
+        'type': 'customers',
+        'data': data_customers
     },
     'contact': {
         'title': '联系我们丨宽连十方',

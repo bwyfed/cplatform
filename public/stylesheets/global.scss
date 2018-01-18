@@ -7,3 +7,44 @@ $fontSize2: 0.2rem;
 $font-size3: 16px;
 $fontSize3: 0.16rem;
 $active-color: #999;
+
+$bgWidth: 87.78%;
+$visualWidth: 81.01%;
+
+//区块的title部分
+.title-row {
+  margin-right: 0;
+  margin-left: 0;
+  .title-item {
+    display: inline-block;
+    padding: 0;
+    vertical-align: middle;
+    &.img-box {
+      font-size: 0;
+      width: $fontSize1;
+      .title-img {
+        display: block;
+        width: 100%;
+      }
+    }
+    &.title1 {
+      font-size: $fontSize1;
+      color: $black1;
+      margin-left: 0.3rem;
+    }
+    &.title-divider {
+      padding-left: 0.3rem;
+      font-size: 0;
+      .title-divider-img {
+        display: block;
+        width: 0.015rem;
+        height: 0.3rem;
+      }
+    }
+    &.title2 {
+      font-size: $fontSize1;
+      color: $black2;
+      margin-left: 0.3rem;
+    }
+  }
+}

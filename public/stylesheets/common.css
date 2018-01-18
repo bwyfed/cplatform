@@ -1,3 +1,32 @@
+.title-row {
+  margin-right: 0;
+  margin-left: 0; }
+  .title-row .title-item {
+    display: inline-block;
+    padding: 0;
+    vertical-align: middle; }
+    .title-row .title-item.img-box {
+      font-size: 0;
+      width: 0.3rem; }
+      .title-row .title-item.img-box .title-img {
+        display: block;
+        width: 100%; }
+    .title-row .title-item.title1 {
+      font-size: 0.3rem;
+      color: #161616;
+      margin-left: 0.3rem; }
+    .title-row .title-item.title-divider {
+      padding-left: 0.3rem;
+      font-size: 0; }
+      .title-row .title-item.title-divider .title-divider-img {
+        display: block;
+        width: 0.015rem;
+        height: 0.3rem; }
+    .title-row .title-item.title2 {
+      font-size: 0.3rem;
+      color: #999999;
+      margin-left: 0.3rem; }
+
 .black-color {
   color: #161616; }
 
@@ -119,7 +148,7 @@ body {
   width: 100%; }
 
 .main-container .index-sections {
-  width: 71.1%;
+  width: 71.11%;
   padding: 0;
   /*margin-top: 50px;*/ }
 
@@ -134,16 +163,22 @@ body {
 
 .index-sections .one-section.intro-section {
   padding-bottom: 0; }
+  .index-sections .one-section.intro-section .index-intro-row {
+    margin-left: 0;
+    margin-right: 0; }
 
 .index-sections .one-section.intro-section .separator-row {
   margin-top: 0; }
 
-.index-row-1 .index-link-1 {
-  display: block;
-  width: 100%; }
-  .index-row-1 .index-link-1 .index-img-1 {
+.index-row-1 {
+  margin-left: 0;
+  margin-right: 0; }
+  .index-row-1 .index-link-1 {
     display: block;
     width: 100%; }
+    .index-row-1 .index-link-1 .index-img-1 {
+      display: block;
+      width: 100%; }
 
 .honor-desc-box {
   margin-top: 1.04rem; }
@@ -216,9 +251,8 @@ body {
 
 .index-sections .one-section .separator-row {
   width: 100%;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  height: 25px;
+  margin: 0.4rem 0;
+  height: 0.2rem;
   overflow: hidden; }
 
 .index-sections .one-section .separator-row img {
@@ -228,24 +262,6 @@ body {
 
 .index-sections .title1-img {
   width: 35px; }
-
-.index-sections .one-section .title-item {
-  display: inline-block;
-  padding: 0;
-  vertical-align: middle; }
-
-.index-sections .one-section .title-item.img {
-  font-size: 0; }
-
-.index-sections .one-section .title-item.title1 {
-  font-size: 30px;
-  color: #161616;
-  margin-left: 30px; }
-
-.index-sections .one-section .title-item.title2 {
-  font-size: 30px;
-  color: #999999;
-  margin-left: 40px; }
 
 .index-sections .cate-name {
   margin-top: 20px;

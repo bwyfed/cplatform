@@ -1,5 +1,5 @@
 extends ../layout
-
+include ../includes/common
 block content
   #myCarousel.carousel.slide
     ol.carousel-indicators
@@ -17,11 +17,7 @@ block content
 
   mixin onesection(info,type)
     .one-section
-      .row.title-row
-        .title-item.img
-          img.title1-img(src="/images/title1.png")
-        .title-item.title1.title-item #{info.title1}
-        .title-item.title2.title-item #{info.title2}
+      +title(info)(style='margin-bottom: 0.5rem;')
       if type
         p haha
       if block

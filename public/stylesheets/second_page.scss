@@ -11,26 +11,24 @@
     width: 100%;
 }
 
-.main-container .service-detail-container {
-    position: relative;
-    width: 87.78%;
-    /*top: -40px;*/
-    background-color: white;
-    padding: 45px 0 0 0;
-    /*border-radius: 10px;*/
-    /*padding: 45px;*/
-}
-
-.main-container .service-detail-container::before {
-    position: absolute;
-    display: block;
-    z-index: 10;
-    content: '';
-    width: 100%;
-    height: 38px;
-    top: -38px;
-    border-radius: 10px 10px 0 0;
-    background-color: white;
+.main-container {
+    .service-detail-container {
+        position: relative;
+        width: $bgWidth;
+        background-color: white;
+        padding: 0.45rem 0 0 0;
+        &::before {
+            position: absolute;
+            display: block;
+            z-index: 10;
+            content: '';
+            width: 100%;
+            height: 0.38rem;
+            top: -0.38rem;
+            border-radius: 10px 10px 0 0;
+            background-color: white;
+        }
+    }
 }
 
 .separator-row {
@@ -48,9 +46,9 @@
 }
 
 .capability-solution-box {
-    width: 100%;
-    padding: 0 45px;
-    padding-bottom: 50px;
+    width: $visualWidth;
+    padding: 0;
+    padding-bottom: 0.5rem;
     .row {
         margin: 0;
     }
@@ -62,11 +60,12 @@
         }
     }
     .solution-qa-box {
+        padding: 0;
         .solution-row {
-            margin-bottom: 40px;
+            margin-bottom: 0.4rem;
         }
         .second-normal-row {
-            margin-bottom: 40px;
+            margin-bottom: 0.4rem;
             .second-normal-item {
                 .second-normal-img-box {
                     .second-normal-img {
@@ -92,7 +91,7 @@
                     color: white;
                 }
                 &.second-solution-item {
-                    width: 80%;
+                    width: 74%;
                 }
                 &.col-md-7 .second-normal-img-box {
                     width: 60%;
@@ -116,31 +115,6 @@
         }
     }
 }
-.title-row {
-    .title-item {
-        display: inline-block;
-        padding: 0;
-        vertical-align: middle;
-        &.img-box {
-            font-size: 0;
-            width: $fontSize1;
-            .title-img {
-                display: block;
-                width: 100%;
-            }
-        }
-        &.title1 {
-            font-size: $fontSize1;
-            color: $black1;
-            margin-left: 30px;
-        }
-        &.title2 {
-            font-size: $fontSize1;
-            color: $black2;
-            margin-left: 40px;
-        }
-    }
-}
 .capability-product-box,.capability-operate-box {
     .capability-product-row,.capability-operate-row {
         .capability-product-img,.capability-operate-img {
@@ -149,25 +123,41 @@
         }
     }
     .capability-product-row {
-        margin-bottom: 90px;
+        margin-bottom: 0.9rem;
+        margin-left: 0;
+        margin-right: 0;
         &:last-child {
             margin-bottom: 0;
         }
     }
     &.capability-product-box {
-        padding: 0 55px 60px;
+        width: $visualWidth;
+        padding: 0 0 0.6rem;
     }
     &.capability-operate-box {
-        padding: 0 55px 100px;
+        width: $visualWidth;
+        padding: 0 0 0.83rem;
+        .capability-operate-row {
+            margin-left: 0;
+            margin-right: 0;
+            .capability-operate-img {
+                width: 90%;
+            }
+        }
     }
 }
 
 .product-box {
-    width: 100%;
+    width: $visualWidth;
+    padding: 0;
+    padding-bottom: 0.41rem;
     .product-row {
-        padding: 0 50px 40px;
+        margin: 0;
+        padding: 0 0 0.4rem;
         .product-item {
+            padding: 0;
             .product-img-box {
+                width: 97.656%;
                 .product-img {
                     display: block;
                     width: 100%;
@@ -178,8 +168,8 @@
 }
 
 .customers-box {
-    width: 81.01%;
-    padding:0 0 0.2rem;
+    width: $visualWidth;
+    padding:0 0 0.7rem;
     .customers-row {
         margin-bottom: 0.12rem;
         .customers-item {
@@ -187,6 +177,46 @@
                 .customers-img {
                     display: block;
                     width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.contact-box {
+    width: $visualWidth;
+    padding-bottom: 1rem;
+    .company-box {
+        padding-left: 14%;
+        .company-name {
+            display: table;
+            margin-bottom: 0.4rem;
+            span {
+                display: table-cell;
+                font-size: 0;
+                vertical-align: middle;
+            }
+            .name-prefix {
+                width: 0.05rem;
+                height: $fontSize2;
+                line-height: 1;
+                background-color: black;
+            }
+            .name {
+                text-indent: 0.16rem;
+                font-size: $fontSize2;
+                color: black;
+                font-weight: bold;
+            }
+        }
+        .company-info {
+            font-size: $fontSize3;
+            color: #666666;
+            display: table;
+            .company-row {
+                display: table-row;
+                .company-cell {
+                    display: table-cell;
                 }
             }
         }

@@ -9,6 +9,7 @@ var data_industry = require('../app/mock/industry.json');
 var data_customers = require('../app/mock/customers.json');
 var data_capability = require('../app/mock/capability.json');
 var data_product = require('../app/mock/product.json');
+var data_contact = require('../app/mock/contact.json');
 
 let subtype_map = {
     '': {
@@ -34,7 +35,9 @@ let subtype_map = {
     },
     'contact': {
         'title': '联系我们丨宽连十方',
-        'bgImg': 'contact/bgtop.png'
+        'bgImg': 'contact/bgtop.png',
+        'type': 'contact',
+        'data': data_contact
     }
 };
 

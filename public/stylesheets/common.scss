@@ -1,11 +1,4 @@
-$black1: #161616;
-$font-size1: 30px;
-$fontSize1: 0.3rem;
-$font-size2: 20px;
-$fontSize2: 0.2rem;
-$font-size3: 16px;
-$fontSize3: 0.16rem;
-$active-color: #999;
+@import "global";
 
 .black-color {
   color: $black1;
@@ -137,7 +130,7 @@ body {
 }
 
 .main-container .index-sections {
-  width: 71.1%;
+  width: 71.11%;
   padding: 0;
   /*margin-top: 50px;*/
 }
@@ -153,17 +146,20 @@ body {
 
 .index-sections .one-section.intro-section {
   padding-bottom: 0;
+  .index-intro-row {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
-.index-sections .one-section.intro-section .index-intro-row {
-
-}
 .index-sections .one-section.intro-section .separator-row {
   margin-top: 0;
 }
 
 //设置首页区块的各种样式
 .index-row-1 {
+  margin-left: 0;
+  margin-right: 0;
   .index-link-1 {
     display: block;
     width: 100%;
@@ -281,9 +277,8 @@ body {
 }
 .index-sections .one-section .separator-row {
   width: 100%;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  height: 25px;
+  margin: 0.4rem 0;
+  height: 0.2rem;
   overflow: hidden;
 }
 .index-sections .one-section .separator-row img {
@@ -293,28 +288,6 @@ body {
 }
 .index-sections .title1-img {
   width: 35px;
-}
-
-.index-sections .one-section .title-item {
-  display: inline-block;
-  padding: 0;
-  vertical-align: middle;
-}
-
-.index-sections .one-section .title-item.img {
-  font-size: 0;
-}
-
-.index-sections .one-section .title-item.title1 {
-  font-size: 30px;
-  color: #161616;
-  margin-left: 30px;
-}
-
-.index-sections .one-section .title-item.title2 {
-  font-size: 30px;
-  color: #999999;
-  margin-left: 40px;
 }
 
 .index-sections .cate-name {
